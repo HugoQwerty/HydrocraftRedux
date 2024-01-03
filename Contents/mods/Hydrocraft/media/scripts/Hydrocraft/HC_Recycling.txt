@@ -8,24 +8,6 @@ module Hydrocraft
 
 /************************ITEMS************************/
 
-item HCStyrofoamball
-    {
-        Weight    		=    	0.01,
-        Type    		=    	Normal,
-        DisplayName    		=    	Styrofoam Ball,
-        Icon    		=    	HCStyrofoamball,
-		DisplayCategory = Useless,
-    }
-
-item HCStyrofoamblock
-    {
-        Weight    		=    	0.01,
-        Type    		=    	Normal,
-        DisplayName    		=    	Styrofoam Block,
-        Icon    		=    	HCStyrofoamblock,
-		DisplayCategory = Useless,
-    }
-
 item HCWaterbottleclean
 	{
 	Weight			=	0.1,
@@ -139,16 +121,6 @@ recipe Shred Useless Circuit Board
     	Time:100,
        	Category:Electrical,
     	OnGiveXP:HCElectricity_OnGiveXP,
-    }
-
-recipe Recycle Wooden Crate
-    {
-    	HCWoodencrate,
-    	keep [Recipe.GetItemTypes.Hammer],
-    	Result:Plank=2,
-    	Time:100,
-    	Category:Carpentry,
-	OnGiveXP:Recipe.OnGiveXP.None,
     }
 
 recipe Recycle Pillow

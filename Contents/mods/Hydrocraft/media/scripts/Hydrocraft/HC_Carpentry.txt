@@ -26,42 +26,6 @@ item HCInfiniteLogpileOak
 	DisplayCategory	= CraftCarp,
 }
 
-item HCLogstack1
-    {
-        Weight          = 1000.0,
-        Type            = Normal,
-        DisplayName     = Log Pile,
-        icon            = HCLogstack1,
-		DisplayCategory	= CraftCarp,
-    }
-
-item HCLogstack2
-    {
-        Weight          = 1000.0,
-        Type            = Normal,
-        DisplayName     = Log Pile,
-        icon            = HCLogstack2,
-		DisplayCategory	= CraftCarp,
-    }
-
-item HCLogstack3
-    {
-        Weight          = 1000.0,
-        Type            = Normal,
-        DisplayName     = Log Pile,
-        icon            = HCLogstack3,
-		DisplayCategory	= CraftCarp,
-    }
-
-item HCLogstack4
-    {
-        Weight          = 1000.0,
-        Type            = Normal,
-        DisplayName     = Log Stack,
-        icon            = HCLogstack4,
-		DisplayCategory	= CraftCarp,
-    }
-
 item HCSawdust
     {
         Weight          = 0.01,
@@ -325,7 +289,7 @@ item HCTroughvegoil
 
 item HCLumberstack
     {
-        Weight          = 12.0,
+        Weight          = 10.0,
         Type            = Normal,
         DisplayName     = Lumber Stack,
         icon            = HCLumberstack,
@@ -334,7 +298,7 @@ item HCLumberstack
 
 item HCLumberbox
     {
-        Weight          = 12.0,
+        Weight          = 10.0,
         Type            = Normal,
         DisplayName     = Pallet of Lumber,
         icon            = HCLumberbox,
@@ -373,7 +337,7 @@ item HCWoodenwheelbarrow
         WeightReduction             = 100,
         Weight                      = 20,
         Type                        = Container,
-        Capacity                    = 200,
+        Capacity                    = 300,
         DisplayName                 = Wooden Wheelbarrow,
         icon                        = HCWoodenwheelbarrow,
 		DisplayCategory	            = Container,
@@ -752,7 +716,7 @@ item HCWagoncovered
         WeightReduction             = 100,
         Weight                      = 20,
         Type                        = Container,
-        Capacity                    = 300,
+        Capacity                    = 400,
         RequiresEquippedBothHands 	= true,
         DisplayName                 = Covered Wagon,
         icon                        = HCWagoncovered,
@@ -764,7 +728,7 @@ item HCWagonoxen
         WeightReduction             = 100,
         Weight                      = 0,
         Type                        = Container,
-        Capacity                    = 300,
+        Capacity                    = 500,
         RequiresEquippedBothHands 	= true,
         DisplayName                 = Wagon with Oxen,
         icon                        = HCWagonoxen,
@@ -776,7 +740,7 @@ item HCWagoncoveredoxen
         WeightReduction             = 100,
         Weight                      = 0,
         Type                        = Container,
-        Capacity                    = 300,
+        Capacity                    = 1000,
         RequiresEquippedBothHands 	= true,
         DisplayName                 = Covered Wagon with Oxen,
         icon                        = HCWagoncoveredoxen,
@@ -803,7 +767,7 @@ item HCIBCfull
         Type                = Drainable,
         DisplayName         = IBC,
         UseWhileEquipped    = 2.0,
-        UseDelta            = 0.0125,
+        UseDelta            = 0.005,
         ReplaceOnDeplete    = HCIBC,
         icon                = HCIBC,
         RainFactor      	= 0.2,
@@ -830,7 +794,7 @@ item HCIBCstoragefull
         Type                = Drainable,
         DisplayName         = IBC Storage,
         UseWhileEquipped    = 2.0,
-        UseDelta            = 0.0125,
+        UseDelta            = 0.005,
         ReplaceOnDeplete    = HCIBCstorage,
         icon                = HCIBCtower,
         RainFactor          = 0.2,
@@ -857,7 +821,7 @@ item HCIBCtowerfull
         Type                = Drainable,
         DisplayName         = IBC Tower,
         UseWhileEquipped    = 2.0,
-        UseDelta            = 0.00625,
+        UseDelta            = 0.0025,
         ReplaceOnDeplete    = HCIBCtower,
         icon                = HCIBCtower2,
         DisplayCategory		= WaterContainer,
@@ -961,102 +925,6 @@ item HCPlankoil
 
 /************************RECIPES************************/
     
-recipe Make Log Pile
-    {
-        Log=5,
-        CanBeDoneFromFloor:true,
-        Result:HCLogstack1,
-        Time:500,
-        Category:Carpentry,
-        OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-recipe Add Logs to Pile
-    {
-        HCLogstack1=2,
-        CanBeDoneFromFloor:true,
-        Result:HCLogstack2,
-        Time:500,
-        Category:Carpentry,
-        OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-recipe Add Logs to Pile
-    {
-        Log=5,
-        HCLogstack1,
-        CanBeDoneFromFloor:true,
-        Result:HCLogstack2,
-        Time:500,
-        Category:Carpentry,
-        OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-recipe Add Logs to Pile
-    {
-        Log=5,
-        HCLogstack2,
-        CanBeDoneFromFloor:true,
-        Result:HCLogstack3,
-        Time:500,
-        Category:Carpentry,
-        OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-recipe Add Logs to Pile
-    {
-        Log=5,
-        HCLogstack3,
-        CanBeDoneFromFloor:true,
-        Result:HCLogstack4,
-        Time:500,
-        Category:Carpentry,
-        OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-recipe Remove Logs from Pile
-    {
-        HCLogstack4,
-        CanBeDoneFromFloor:true,
-        Result:HCLogstack3,
-        Time:500,
-        Category:Carpentry,
-        OnCreate:recipe_hclog5,
-        OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-recipe Remove Logs from Pile
-    {
-        HCLogstack3,
-        CanBeDoneFromFloor:true,
-        Result:HCLogstack2,
-        Time:500,
-        Category:Carpentry,
-        OnCreate:recipe_hclog5,
-        OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-recipe Remove Logs from Pile
-    {
-        HCLogstack2,
-        CanBeDoneFromFloor:true,
-        Result:HCLogstack1,
-        Time:500,
-        Category:Carpentry,
-        OnCreate:recipe_hclog5,
-        OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-recipe Remove Logs from Stack
-    {
-        HCLogstack1,
-        CanBeDoneFromFloor:true,
-        Result:Log=5,
-        Time:500,
-        Category:Carpentry,
-        OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
 recipe Saw Logs
     {
         Log,

@@ -1,29 +1,34 @@
 version=1
-id=2778991696
-title=HydroCraft b41 Continued
+id=
+title=HydroCraft b41 Redux
 description=[url=https://forms.gle/55hCSS6X811cCZ8m8] [h1][b] PLEASE PARTICIPATE IN THIS POLL TO IMPROVE THE MOD!  [/b][/h1] [/url]
-description=[h1]Latest Hydrocraft mod for b41 - for both MP & SP[/h1]
-description=[h1]recent update highlights 7-May-2023[/h1]
+description=[h1]Hydrocraft mod for b41 - for both MP & SP[/h1]
+description=[h1]Redux Version[/h1]
 description=[list]
-description=[*] More models by AuthenticPeach. Thanks alot
-description=[*] more food recipes are nutrient accurate
-description=[*] bellows issues fixed
-description=[*] Problems caused by mods deleting distributions fixed
-description=[*] Cork spawns heavily increased in bins
-description=[*] And more in the change logs
+description=[*] Less Recipes
+description=[*] No Trash/Useless Items
+description=[*] No Decoration Only Items
+description=[*] Less "Redundant" stuff
+description=[*] Rebalanced Items to provide value more equal to the effort (Ex: Horse Carriage 500/100 both Hand container for large scale looting/moving)
+description=[*] Rebalanced Smithing/Mining
+description=[*] Switched custom script timed Items to simply use "spoiling" to switch items
+description=[*] Removed the Indoor Farming restriction and functions (big farms could eat a lot of performance)
+description=[*] Removed any anchoring. Its just annoying and can be cheesed for griefing (both to steal anchored items and to put them "in the way"
 description=[/list]
-description=[h1] hotfix 19-may-2023 to fix items spawning on zombies added by hydrocraft[/h1]
 description=
-description=Hydrocraft is a mod based around crafting and filling in the empty world of zomboid with more stuff. It is inspired by survival crafting games like Haven and Hearth. This mod is currently the latest and the one that is being updated.
-description=
-description=There are 2 other main hydrocraft mods. One is the b40 version made by Hydromancerx and is no longer being updated. The other one is by David Hasihoff on steam. This was the [b]previous[/b] version of hydrocraft for b41, but is now no longer updated. I am now taking over with some help to continue fixing and improving Hydrocraft as a whole.
-description=
+description=Hydrocraft Redux is a mod based around crafting and filling in the empty world of zomboid with (less) more stuff. 
+
+This version was born to have a. an easier Update process for when the next alpha comes and to bring a version of hydrocraft that fits more with other mods.
+
+I am Part of the current Dev team and i will help update the main version for Hydrocraft when the next alpha comes out.
+
+Only use one Version of hydrocraft. I changed the mod id and mod name since most "addon" mods for hydrocraft will not work with redux or will be redundant.
 description=
 description=If you need any help, feel free to come to this [url=https://discord.gg/hUMsjfApUt]discord[/url] to ask questions in the questions channel.
 description=
 description=We also now have a public [url=https://github.com/robotex140/Hydrocraft]github[/url] if you want to contribute or make bug reports and the like
 description=
-description=Workshop ID: 2778991696
-description=Mod ID: Hydrocraft
+description=Workshop ID: 
+description=Mod ID: HydrocraftRedux
 tags=Build 41;Building;Clothing/Armor;Food;Items;Literature;Multiplayer;Weapons
-visibility=public
+visibility=private

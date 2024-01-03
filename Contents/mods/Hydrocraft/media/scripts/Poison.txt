@@ -1,3 +1,0 @@
-/*Removed*/
-/*Strong poisons were only for suicide, which has been removed*/
-/*Mild poisons has no use*/

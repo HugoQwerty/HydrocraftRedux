@@ -1,3 +1,0 @@
-/*Removed*/
-
-/*Used to contain the trading cone and a handful of buy item recipes*/

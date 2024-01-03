@@ -71,7 +71,7 @@ Events.OnZombieDead.Add(SpawnLootOnDeadZombie)
 
 local function OnLoadSpawnOnZeds()
 
-	local SPAWN_MONEY = true --no sandbox setting for money, yet.
+	local SPAWN_MONEY = false --no sandbox setting for money, yet.
 	local SPAWN_HC_GUNS = true
 	
 	if(SandboxVars.Hydrocraft.SpawnHydrocraftGuns ~= nil) then
@@ -93,63 +93,48 @@ local function OnLoadSpawnOnZeds()
 	end
 
 	-- Weapons/Tools --
-	--LOOT["Base.Lighter"] = 1
-	--LOOT["Base.Matches"] = 1
-	--LOOT["Hydrocraft.HCSurvivalaxe"] = 0.06 --added to impaled weapons.
-	--LOOT["Base.Hammer"] = 0.3
-	--LOOT["Base.Saw"] = 0.3
 	LOOT["Hydrocraft.HCPliers"] = 0.05
-	LOOT["Base.TinOpener"] = 0.1
-	--LOOT["Hydrocraft.HCJackknife"] = 0.05 --added to impaled weapons.
-	LOOT["Hydrocraft.HCBinoculars"] = 0.05
-	LOOT["Hydrocraft.HCMeasuringtape"] = 0.05
-	--LOOT["Hydrocraft.HCCompass"] = 0.1
+	LOOT["Base.TinOpener"] = 0.025
+	LOOT["Hydrocraft.HCBinoculars"] = 0.005
+	LOOT["Hydrocraft.HCMeasuringtape"] = 0.025
 	LOOT["Base.Torch"] = 0.1
 	LOOT["Hydrocraft.HCFlashlightoff"] = 0.25
 	LOOT["Hydrocraft.HCFlashlighton"] = 0.25
-	LOOT["Hydrocraft.HCManometer"] = 0.04
+	LOOT["Hydrocraft.HCManometer"] = 0.02
 	LOOT["Hydrocraft.HCTrashsmall"] = 0.2
-	LOOT["Hydrocraft.HCFile"] = 0.05
+	LOOT["Hydrocraft.HCFile"] = 0.025
 	LOOT["Hydrocraft.HCCalculator"] = 0.1
 
 	if(SPAWN_HC_GUNS) then --if you edit these values, also edit the value in the else clause
-		LOOT["Hydrocraft.HCMagAA12"] = 0.05
-		LOOT["Hydrocraft.HCAA12"] = 0.06
-		LOOT["Hydrocraft.HCUziSilencer"] = 0.05
-		LOOT["Hydrocraft.HCUzi"] = 0.06
-		LOOT["Hydrocraft.HCMagUZI"] = 0.05
-		LOOT["Hydrocraft.HCShotgunSilencer"] = 0.05
+		LOOT["Hydrocraft.HCMagAA12"] = 0.02
+		LOOT["Hydrocraft.HCAA12"] = 0.01
+		LOOT["Hydrocraft.HCUziSilencer"] = 0.02
+		LOOT["Hydrocraft.HCUzi"] = 0.02
+		LOOT["Hydrocraft.HCMagUZI"] = 0.02
+		LOOT["Hydrocraft.HCShotgunSilencer"] = 0.02
 	else
-		LOOT[NOTHING] = LOOT[NOTHING] + 0.32 --prevents disabling guns from boosting spawn rates.
+		LOOT[NOTHING] = LOOT[NOTHING] + 0.11 --prevents disabling guns from boosting spawn rates.
 	end
 
 	-- Clothes --
-	--LOOT["Hydrocraft.HCWorkgloves"] = 0.2
-	--LOOT["Hydrocraft.HCDentures"] = 0.2
-	--LOOT["Hydrocraft.HCEyepatch"] = 0.2
-	LOOT["Hydrocraft.HCBrokenHearingaid"] = 0.2
-	--LOOT["Hydrocraft.HCGlasseye"] = 0.2
-	--LOOT["Hydrocraft.HCProstheticleg"] = 0.2
-	LOOT["Base.Belt2"] = 0.2
+	LOOT["Hydrocraft.HCBrokenHearingaid"] = 0.1
+	LOOT["Base.Belt2"] = 0.1
 
 	-- Food --
 	LOOT["Hydrocraft.HCTrailmix"] = 0.1
-	LOOT["Hydrocraft.HCEnergybar"] = 0.1
-	LOOT["Hydrocraft.HCGum"] = 0.2
-	LOOT["Hydrocraft.HCGum2"] = 0.2
-	LOOT["Hydrocraft.HCGum3"] = 0.2
-	--LOOT["Hydrocraft.HCMysteryseedspacket"] = 0.1 --removed, these now spawn on farmer zeds using the vanilla spawn system.
-	--LOOT["Hydrocraft.HCMRE"] = 0.2
+	LOOT["Hydrocraft.HCEnergybar"] = 0.05
+	LOOT["Hydrocraft.HCGum"] = 0.15
+	LOOT["Hydrocraft.HCGum2"] = 0.15
+	LOOT["Hydrocraft.HCGum3"] = 0.15
+	LOOT["Hydrocraft.HCMRE"] = 0.01
 
 	-- Other --
-	LOOT["Hydrocraft.HCHousefly"] = 0.2
-	--LOOT["Hydrocraft.HCMaggot"] = 0.2 --now vanilla item, so removed.
+	LOOT["Hydrocraft.HCHousefly"] = 0.25
 	LOOT["Base.Cockroach"] = 0.25
 	LOOT["Base.Worm"] = 0.25
-	LOOT["Base.Book"] = 0.2
-	LOOT["Base.WaterBottleEmpty"] = 0.3
-	LOOT["Base.BandageDirty"] = 0.2
-	--LOOT["Base.Headphones"] = 0.2
+	LOOT["Base.Book"] = 0.1
+	LOOT["Base.WaterBottleEmpty"] = 0.4
+	LOOT["Base.BandageDirty"] = 0.4
 
 	local total = 0
 	for k, v in pairs(LOOT) do

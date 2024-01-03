@@ -17,30 +17,6 @@ item HCBugnet
 		DisplayCategory	=   SurBug,
     } 
 
-item HCBugjar
-    {
-        Weight    		= 	0.3,
-        Type    		= 	Normal,
-        DisplayName         	= 	Bug Jar,
-        icon 			= 	HCBugjar,
-		DisplayCategory	=   SurBug,
-    } 
-
-item HCJarfireflies
-	{
-	LightDistance		=	3,
-	Weight			=	0.2,
-	DisappearOnUse		=	FALSE,
-	Type			=	Drainable,
-	TorchCone		=	TRUE,
-	UseDelta		=	0.003,
-	LightStrength		=	0.4,
-	DisplayName		=	Jar of Fireflies,
-	ActivatedItem		=	TRUE,
-	Icon			=	HCJarfireflies,
-		DisplayCategory	=   SurBug,
-	}
-
 item HCBeetle
     {
         Weight    		= 	0.01,
@@ -499,35 +475,6 @@ item HCSlugcooked
 		DisplayCategory		= FoodP,
 	}
 
-item HCAntfarm
-    {
-		DisplayCategory	 = Household,
-        Weight    		 = 0.1,
-        Type    		 = Normal,
-        DisplayName      = Empty Ant Farm,
-        icon 			 = HCAntfarm,
-		WorldStaticModel = WorldItem-HCAntFarmEmpty,			
-    }
-
-item HCAntfarmblack
-    {
-		DisplayCategory	 = SurBug,
-        Weight    		 = 0.1,
-        Type    		 = Normal,
-        DisplayName      = Black Ant Farm,
-        icon 			 = HCAntfarm2,
-		WorldStaticModel = WorldItem-HCAntFarmFull,		
-    }
-
-item HCAntfarmred
-    {
-		DisplayCategory	 =   SurBug,
-        Weight    		 = 0.1,
-        Type    		 = Normal,
-        DisplayName      = Red Ant Farm,
-        icon 			 = HCAntfarm2,
-		WorldStaticModel = WorldItem-HCAntFarmFull,				
-    }
 
 /************************RECIPES************************/
 
@@ -545,35 +492,6 @@ recipe Make Bug Net
    	OnGiveXP:Recipe.OnGiveXP.None,
     }
 
-recipe Put Bug in Jar
-    {
-    	EmptyJar,
-    	HCFirefly,
-    	Result:HCJarfireflies,
-    	Time:15,
-    	Category:Leisure,
-   	OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-recipe Put Bug in Jar
-    {
-    	EmptyJar,
-    	Worm/Cricket/Grasshopper/Cockroach/HCBeetle/HCBollweevil/HCLadybug/HCDragonfly/HCGardenspider/HCCaterpillar/HCCaterpillar2/HCBumblebee/HCBeetlegrub/HCCicada/HCRedant/HCBlackant/HCPillbug/HCTermite/HCYellowjacket/HCButterfly/HCMonarch/HCMolecricket/HCBlackwidow/HCHousespider/HCHousefly/HCSnail,
-    	Result:HCBugjar,
-    	Time:15,
-    	Category:Leisure,
-   	OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-recipe Play With
-    {
-    	HCBugjar,
-    	Result:EmptyJar,
-    	Time:500,
-    	OnCreate:HC_ToyStatModifier,
-    	Category:Leisure,
-   	OnGiveXP:Recipe.OnGiveXP.None,
-    }
 
 recipe Catch Bugs
     {
@@ -647,78 +565,6 @@ recipe Feed Caterpillar
     NeedToBeLearn:true,
     Time:1000,
     Category:Ranching,
-    OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-recipe Assemble Ant Farm
-    {
-    Dirtbag,
-    HCBlackant=20,
-    HCAntfarm,
-    Result:HCAntfarmblack,
-    NeedToBeLearn:true,
-    Time:200,
-    Category:Leisure,
-    OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-recipe Assemble Ant Farm
-    {
-    Dirtbag,
-    HCRedant=20,
-    HCAntfarm,
-    Result:HCAntfarmred,
-    NeedToBeLearn:true,
-    Time:200,
-    Category:Leisure,
-    OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-recipe Watch Ants
-    {
-    keep HCAntfarmblack,
-    Result:HCAntfarmblack,
-    Time:500,
-    OnCreate:HC_ToyStatModifier,
-    Category:Leisure,
-    RemoveResultItem:true,
-    OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-recipe Watch Ants
-    {
-    keep HCAntfarmred,
-    Result:HCAntfarmred,
-    Time:500,
-    OnCreate:HC_ToyStatModifier,
-    Category:Leisure,
-    RemoveResultItem:true,
-    OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-recipe Feed Ants
-    {
-    HCSugarcubes/HCCaterpillar/HCBeetlegrub,
-    keep HCAntfarmblack,
-    Result:HCAntfarmblack,
-    NeedToBeLearn:true,
-    Time:100,
-    OnCreate:HC_ToyStatModifier,
-    Category:Leisure,
-    RemoveResultItem:true,
-    OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-recipe Feed Ants
-    {
-    HCSugarcubes/HCCaterpillar/HCBeetlegrub,
-    keep HCAntfarmred,
-    Result:HCAntfarmred,
-    NeedToBeLearn:true,
-    Time:100,
-    OnCreate:HC_ToyStatModifier,
-    Category:Leisure,
-    RemoveResultItem:true,
     OnGiveXP:Recipe.OnGiveXP.None,
     }
 

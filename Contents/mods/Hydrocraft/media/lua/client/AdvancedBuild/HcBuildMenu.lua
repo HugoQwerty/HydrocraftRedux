@@ -9,13 +9,13 @@ Hydrocraft.doBuildMenus = function(_player, _context, _worldObjects)
 	local player = _player;
 	local context = _context;
 	local worldobjects = _worldObjects;
-	local HcMenuOption = context:addOption("Building", worldobjects);
+	local HcMenuOption = context:addOption("HC Building", worldobjects);
 	local HcSubMenu = ISContextMenu:getNew(context);
 	context:addSubMenu(HcMenuOption, HcSubMenu);
 
 	Hydrocraft.BuildOptionGlassRoof(player, HcSubMenu)
-	Hydrocraft.BuildOptionSteelStairs (player, HcSubMenu)
 	Hydrocraft.BuildOptionGlassWall (player, HcSubMenu)
+	Hydrocraft.BuildOptionSteelStairs (player, HcSubMenu)
 	Hydrocraft.BuildOptionWallBrick (player, HcSubMenu)
 	Hydrocraft.BuildOptionWallBrickWin (player, HcSubMenu)
 	Hydrocraft.BuildOptionIBCTower (player, HcSubMenu)
@@ -29,7 +29,6 @@ Hydrocraft.doBuildMenus = function(_player, _context, _worldObjects)
 
 	HcMenuOption = context:addOption("Ranching", worldobjects);
 	HcSubMenu = ISContextMenu:getNew(context);
-
 
 	context:addSubMenu(HcMenuOption, HcSubMenu);
 	Hydrocraft.RanchingOptionBeehive(player, HcSubMenu)

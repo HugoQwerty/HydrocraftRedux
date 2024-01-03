@@ -418,6 +418,10 @@ item HCZedmeatheadless
         DaysTotallyRotten	=	1,
         MinutesToBurn		=	250,
         MinutesToCook		=	150,
+		Carbohydrates 		= 	130,
+        Proteins 		    = 	1141.1,
+       	Lipids 			    = 	429.1,
+        Calories 		    = 	6930,
         DaysFresh			=	1,
 		DisplayCategory 	=       FoodP,
 	

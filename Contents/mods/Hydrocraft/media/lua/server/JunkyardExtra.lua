@@ -34,10 +34,6 @@ junkFinds = {};
 junk = {'Base.ElectronicsScrap','Base.Newspaper','Hydrocraft.HCBatterysmalldead','Hydrocraft.HCBatteryempty','Hydrocraft.HCBatterymediumdead','Hydrocraft.HCBatterylargedead','Hydrocraft.HCDeodorantspray','Hydrocraft.HCRazorblade','Hydrocraft.HCBookcover','Hydrocraft.HCWirehanger','Hydrocraft.HCWoodhanger','Hydrocraft.HCBathtoweldirty','Hydrocraft.HCSafetypin','Hydrocraft.HCSewingpin','Hydrocraft.HCFilmcanister','Hydrocraft.HCThumbtack','Hydrocraft.HCBinderclip','Hydrocraft.HCDustpan','Base.JarLid','Hydrocraft.HCPaintcan','Hydrocraft.HCGummybearstrash','Hydrocraft.HCCandycorntrash','Hydrocraft.HCEnergydrinktrash','Hydrocraft.HCCrisps6trash','Hydrocraft.HCCrisps5trash','Hydrocraft.HCPoptrash','Hydrocraft.HCCannedsardinesempty','Hydrocraft.HCCannedtomatoempty','Hydrocraft.HCCannedpumpkinempty','Hydrocraft.HCCannedpearempty','Hydrocraft.HCCannedappleempty','Hydrocraft.HCTrailmixtrash','Hydrocraft.HCChocolatewhitetrash','Hydrocraft.HCChocolatedarktrash','Hydrocraft.HCMintcandytrash','Hydrocraft.HCMustardempty','Hydrocraft.HCKetchupempty','Hydrocraft.HCYoghurtempty','Hydrocraft.HCIcecreamempty','Hydrocraft.HCCerealtrash','Hydrocraft.HCOatsempty','Hydrocraft.HCScotchtapeempty','Hydrocraft.HCLicenceplate','Hydrocraft.HCLicenceplate','Hydrocraft.HCEyedropperbottle','Hydrocraft.HCGlassbottlesulfuricacidempty','Hydrocraft.HCGlassbottlephenylempty','Hydrocraft.HCGlassbottlemethylaminempty','Hydrocraft.HCGlassbottleh2o2empty','Hydrocraft.HCGlassbottleammoniaempty','Hydrocraft.HCGlassbottleethanolempty','Hydrocraft.HCPlastcfork','Hydrocraft.HCNapkindirty','Hydrocraft.HCBeercan','Hydrocraft.HCBabyfoodjar','Hydrocraft.HCRamencheesetrash','Hydrocraft.HCRamenshrimptrash','Hydrocraft.HCRamenchickentrash','Hydrocraft.HCCanbangedupopenempty','Hydrocraft.HCCannedcheesesauceopenempty','Hydrocraft.HCCannedchickenbreastopenempty','Hydrocraft.HCCannedfruitcocktailopenempty','Hydrocraft.HCCannedgovermentbeefopenempty','Hydrocraft.HCCannedgovermentbreadopenempty','Hydrocraft.HCCannedgovermentchickenopenempty','Hydrocraft.HCCannedgovermentporkopenempty','Hydrocraft.HCCannedpiefillingappleopenempty','Hydrocraft.HCCannedpiefillingcherryopenempty','Hydrocraft.HCCannedpiefillingblueberryopenempty','Hydrocraft.HCCannedravioliopenempty','Hydrocraft.HCCannedspaghettiringsopenempty','Hydrocraft.HCWhippedcreamcanempty','Hydrocraft.HCPuddingcupempty','Hydrocraft.HCCookiesbrowniebagtrash','Hydrocraft.HCCookiesmintbagtrash','Hydrocraft.HCCookieschocolatechipbagtrash','Hydrocraft.HCEvaporatedmilkopenempty'}
 good = {'Base.Bullets44Box','Base.Bullets9mmBox','Base.ShotgunShellsBox','Hydrocraft.HCColoredwire','Hydrocraft.HCColander','Base.LightBulb','Hydrocraft.HCSyringeempty','Base.Coldpack','Base.RubberBand','Base.Screws','Base.CordlessPhone','Base.KitchenKnife','Hydrocraft.HCHairdryer','farming.GardeningSprayEmpty','Hydrocraft.HCTampon','Base.Headphones','Hydrocraft.HCClothespin','Hydrocraft.HCBungeecord','Hydrocraft.HCWeldinghose','Hydrocraft.HCRubberhose','Radio.CDplayer','Base.Needle','Hydrocraft.HCBoxphoto','Hydrocraft.HCBoxgarden','Hydrocraft.HCBoxpet','Hydrocraft.HCBoxelectronic','Hydrocraft.HCBoxlab','Hydrocraft.HCMysteryseedspacket','Hydrocraft.HCCircuitboarduseless','Hydrocraft.HCElectronicparts01','Hydrocraft.HCColoredwire','Base.Book','Hydrocraft.HCFlourempty','Hydrocraft.HCRiceempty','Hydrocraft.HCSugarempty','Hydrocraft.HCVinegarempty','Hydrocraft.HCGlueempty','Hydrocraft.HCValve','Hydrocraft.HCXmasgift'}
 
-if  player:getTraits():contains('Lucky') then 
-    luck = luck + 3;
-    player:getInventory():AddItems("Base.ScrapMetal",ZombRand(5));
-else
     player:getInventory():AddItems("Base.ScrapMetal",ZombRand(3));
 end
 
@@ -401,16 +397,15 @@ function hcmetalsearch(items, result, player)
 
 trash = {'Hydrocraft.HCJunkbicycle','Hydrocraft.HCHedgetrimmer','Hydrocraft.HCBottleopener','Hydrocraft.HCWirehanger','Base.ElectronicsScrap ','Hydrocraft.HCWhippedcreamcanempty','Hydrocraft.HCPop6trash','Hydrocraft.HCCannedspaghettiringsopenempty','Hydrocraft.HCCannedspaghettiringsopenempty','Hydrocraft.HCCannedmacncheeseopenempty','Hydrocraft.HCCannedgovermentporkopenempty','Hydrocraft.HCCannedfruitcocktailopenempty','Hydrocraft.HCCannedchickenbreastopenempty','Hydrocraft.HCCannedcheesesauceopenempty','Hydrocraft.HCCanbangedupopenempty','Hydrocraft.HCRustyshards','Hydrocraft.HCInkroller','Base.VideoGame','Base.JarLid','Hydrocraft.HCTincan','Hydrocraft.HCRustyshards','Hydrocraft.HCBatterysmalldead','Hydrocraft.HCBatterymediumdead','Hydrocraft.HCBatterylargedead','Base.Extinguisher','Base.Paperclip'}
 good = {'Hydrocraft.HCFile','Hydrocraft.HCClothespin','Base.Nails','Base.Screws','Base.BarbedWire','Base.Wire','Base.Needle','Base.Bullets9mm','Base.ShotgunShells','Base.223Bullets','Base.308Bullets','Base.Screwdriver','Base.Hammer','Base.Saw','Base.Hinge','Base.Doorknob','Base.Pipe','Base.SheetMetal','farming.GardeningSprayEmpty','farming.WateredCan','Base.Shovel2','Base.Tweezers','Hydrocraft.HCWrench','Hydrocraft.HCPliers','Hydrocraft.HCJackknife','Base.Toolbox','Base.Rake','Hydrocraft.HCMedicalbox','Hydrocraft.HCSurvivalaxe','Hydrocraft.HCSteelpipe','Hydrocraft.HCCopperpipe','Hydrocraft.HCChickenwire','Base.Padlock','Hydrocraft.HCDrillhead','Base.PickAxe','Base.WeldingMask ','Base.BlowTorch ','Hydrocraft.HCBoxcutter','Hydrocraft.HCCalculator ','Hydrocraft.HCBatterysmall','Hydrocraft.HCBatterymedium ','Hydrocraft.HCBatterylarge ','Hydrocraft.HCBatteryhuge ','Base.Battery','Hydrocraft.HCMeatcleaver','Hydrocraft.HCMeteorite','Hydrocraft.HCIronore ','Radio.CDplayer','Base.Lighter ','Hydrocraft.HCPipebender','Hydrocraft.HCGlasscutter','Hydrocraft.HCChiselhead','Hydrocraft.HCSawcircularblade','Hydrocraft.HCSawcircularblade','Base.Jack','Base.Wrench','Base.LugWrench','Base.TirePump'}
-nice = {'Hydrocraft.HCManometer','Hydrocraft.HCIroningot','Hydrocraft.HCMagnetite','Hydrocraft.HCValve','Hydrocraft.HCAuger','Hydrocraft.HCShears','Base.EngineParts','Hydrocraft.HCMagnetite','Hydrocraft.HCChain','Hydrocraft.HCDogwhistle'}
-jackpot = {'Hydrocraft.HCConanSword','Hydrocraft.HCSpikedmacesteel','Hydrocraft.HCSpearsteel'}
+nice = {'Hydrocraft.HCManometer','Hydrocraft.HCMagnetite','Hydrocraft.HCValve','Hydrocraft.HCShears','Base.EngineParts','Hydrocraft.HCMagnetite','Hydrocraft.HCChain','Hydrocraft.HCDogwhistle'}
+auger = {'Hydrocraft.HCAuger'}
 
 local skill = player:getPerkLevel(Perks.PlantScavenging);
 local count = 0;
 local ItemNr = 0;
 local luck = ZombRand(20) + skill;
+local luck2 = ZombRand(10);
 
-if  player:getTraits():contains('Lucky') then 
-luck = luck + 5;
 end
 
 if luck >= 14 then -- found nothing.
@@ -422,37 +417,29 @@ ItemNr = ZombRand(count)+1;
 
 player:getInventory():AddItem(trash[ItemNr]);
 
-
 elseif luck <= 27  then
 print ("I found something usefull");
 for _ in pairs(good) do count = count + 1 end
 ItemNr = ZombRand(count)+1;
 player:getInventory():AddItem(good[ItemNr]);
 
-else
+elseif luck <= 28  then
 print ("I was very lucky");
 for _ in pairs(nice) do count = count + 1 end
 ItemNr = ZombRand(count)+1;
 player:getInventory():AddItem(nice[ItemNr]);
+
+else
+if luck2 = 0 then
+print ("I was really lucky");
+player:getInventory():AddItem(auger[1]);
+else 
+print ("I was very lucky");
+for _ in pairs(nice) do count = count + 1 end
+ItemNr = ZombRand(count)+1;
+player:getInventory():AddItem(nice[ItemNr]);
+end -- find auger
 end -- finding anything
-
-
--- chance to find a high end weapon
-count = 0;
-if luck >= 30 then
-    luck = ZombRand(5);
-    if  player:getTraits():contains('Lucky') then 
-        luck = luck + 1;
-    end
-    if luck >= 5 then
-        for _ in pairs(jackpot) do count = count + 1 end
-        ItemNr = ZombRand(count)+1;
-        print (jackpot[ItemNr]);
-        player:getInventory():AddItem(jackpot[ItemNr]);
-    end
-end -- superlucky
-
-
 
 
 end -- you will find something

@@ -82,18 +82,6 @@ item HCHaircolorred
 	DisplayCategory          =   Appear,
     }
 
-item HCHairdryer
-    {	
-		DisplayCategory  = CraftElec,
-        Weight    		 = 1,
-        Type    		 = Normal,
-        DisplayName      = Hairdryer,
-        icon 			 = HCHairdryer,	
-		AttachmentType  = 	Screwdriver,
-		StaticModel      =  WorldItem-HCHairDryer,		
-		WorldStaticModel = WorldItem-HCHairDryer,
-    }
-
 item HCElectrictoothbrush
     {
         Weight    		= 0.2,
@@ -154,210 +142,6 @@ item HCElectricrazordead
 	DisplayCategory          =   Misc,
     }
 
-item HCWashclothwet
-    {
-	Type			=	Normal,
-	DisplayName		=	Wet Washcloth,
-	Icon			=	HCWashclothwet,
-	Weight			=	0.4,
-	DisplayCategory          =   Useless,
-    }
-  
-item HCWashcloth
-    {
-	Weight			=	0.2,
-	Type			=	Drainable,
-	DisplayName		=	Washcloth,
-        UseWhileEquipped	=	FALSE,
-	Icon			=	HCWashcloth,
-        UseDelta		=	0.1,
-	ReplaceOnDeplete	=	HCWashclothwet,
-	DisplayCategory          =   Useless,
-    }
-
-item HCChapstick
-    {
-        Weight    		= 0.1,
-	Type			= Drainable,
-	UseWhileEquipped	= FALSE,
-	UseDelta		= 0.25,
-        DisplayName         	= Chapstick,
-        icon 			= HCChapstick,
-	DisplayCategory          =   Useless,
-    }
-
-item HCDeodorantstick
-    {
-        Weight    		= 0.1,
-	Type			= Drainable,
-	UseWhileEquipped	= FALSE,
-	UseDelta		= 0.25,
-        DisplayName         	= Deodorant Stick,
-        icon 			= HCDeodorantstick,
-	DisplayCategory          =   Useless,
-    }
-
-item HCDeodorantspray
-    {
-        Weight    		= 0.1,
-	Type			= Drainable,
-	UseWhileEquipped	= FALSE,
-	UseDelta		= 0.25,
-        DisplayName         	= Deodorant Spray,
-        icon 			= HCDeodorantspray,
-	DisplayCategory          =   Useless,
-    }
-
-item HCDiaper
-    {
-        Weight    		= 0.1,
-        Type    		= Normal,
-        DisplayName         	= Diaper,
-        icon 			= HCDiaper,
-	ReplaceOnUse    	= HCDiaperDirty,
-	CanBandage		= TRUE,
-	BandagePower    	= 2,
-        Tooltip 		= Tooltip_UseOnHealthPanel,
-	DisplayCategory          =   Bandage,
-    }
-
-item HCDiaperAlcohol
-    {
-        Weight    		= 0.1,
-        Type    		= Normal,
-        DisplayName         	= Diaper,
-        icon 			= HCDiaper,
-	ReplaceOnUse    	= HCDiaperDirty,
-        Alcoholic		= TRUE,
-	CanBandage		= TRUE,
-	BandagePower    	= 2,
-        Tooltip 		= Tooltip_AlcoholBandage,
-	DisplayCategory          =   Bandage,
-    }
-
-item HCDiaperDirty
-    {
-        Weight    		= 0.1,
-        Type    		= Normal,
-        DisplayName         	= Dirty Diaper,
-        icon 			= HCDiaperDirty,
-	CanBandage		= TRUE,
-	BandagePower    	= 0,
-        Alcoholic		= TRUE,
-	DisplayCategory          =   Bandage,
-    }
-
-item HCDiaperpack
-    {
-        Weight    		= 0.3,
-        Type    		= Normal,
-        DisplayName         	= Pack of Diapers,
-        icon 			= HCDiaperpack,
-	DisplayCategory          =   Bandage,
-    }
-
-item HCMenstrualpad
-    {
-        Weight    		= 0.1,
-        Type    		= Normal,
-        DisplayName         	= Menstrual Pad,
-        icon 			= HCMenstrualpad,
-	ReplaceOnUse    	= HCMenstrualpadDirty,
-	CanBandage		= TRUE,
-	BandagePower    	= 2,
-        Tooltip 		= Tooltip_UseOnHealthPanel,
-	DisplayCategory          =   Bandage,
-    }
-
-item HCMenstrualpadAlcohol
-    {
-        Weight    		= 0.1,
-        Type    		= Normal,
-        DisplayName         	= Sterilized Menstrual Pad,
-        icon 			= HCMenstrualpad,
-	ReplaceOnUse    	= HCMenstrualpadDirty,
-	CanBandage		= TRUE,
-	BandagePower    	= 2,
-        Alcoholic		= TRUE,
-	DisplayCategory          =   Bandage,
-    }
-
-item HCMenstrualpadDirty
-    {
-        Weight    		= 0.1,
-        Type    		= Normal,
-        DisplayName         	= Dirty Menstrual Pad,
-        icon 			= HCMenstrualpadDirty,
-	CanBandage		= TRUE,
-	BandagePower    	= 0,
-	DisplayCategory          =   Bandage,
-    }
-
-item HCMenstrualpadbox
-    {
-        Weight    		= 0.3,
-        Type    		= Normal,
-        DisplayName         	= Box of Menstrual Pads,
-        icon 			= HCMenstrualpadbox,
-	DisplayCategory          =   Bandage,
-    }
-
-item HCTampon
-    {
-        Weight    		= 0.1,
-        Type    		= Normal,
-        DisplayName         	= Tampon,
-        icon 			= HCTampon,
-	DisplayCategory          =   CraftChem,
-    }
-
-item HCTamponbox
-    {
-        Weight    		= 0.3,
-        Type    		= Normal,
-        DisplayName         	= Box of Tampons,
-        icon 			= HCTamponbox,
-	DisplayCategory          =   CraftChem,
-    }
-
-item HCTissuebox
-    {
-        Weight    		= 0.3,
-        Type    		= Normal,
-        DisplayName         	= Box of Tissues,
-        icon 			= HCTissuebox,
-	DisplayCategory          =   Medical,
-    }
-
-item HCBabywipes
-    {
-        Weight    		= 0.3,
-        Type    		= Normal,
-        DisplayName         	= Baby Wipes,
-        icon 			= HCBabywipes,
-	DisplayCategory          =   Useless,
-    }
-
-item HCBodybrush
-    {
-        Weight    		= 0.1,
-        Type    		= Normal,
-        DisplayName         	= Body Brush,
-        icon 			= HCBodybrush,
-	DisplayCategory          =   Useless,
-    }
-
-item HCHairconditioner
-    {
-        Weight    		= 0.2,
-	Type			= Drainable,
-	UseWhileEquipped	= FALSE,
-	UseDelta		= 0.25,
-        DisplayName         	= Hair Conditioner,
-        icon 			= HCHairconditioner,
-	DisplayCategory          =   Useless,
-    }
-
 item HCHandsoap
     {
         Weight    		= 0.2,
@@ -414,15 +198,6 @@ item HCMouthwash2
 	DisplayCategory          =   FoodB,
 }
 
-item HCPumice
-    {
-        Weight    		= 0.1,
-        Type    		= Normal,
-        DisplayName         	= Pumice Stone,
-        icon 			= HCPumice,
-	DisplayCategory          =   Useless,
-    }
-
 item HCShampoo
     {
         Weight    		= 0.2,
@@ -434,28 +209,6 @@ item HCShampoo
 	DisplayCategory          =   CraftChem,
     }
 
-item HCShavingcream
-    {
-        Weight    		= 0.2,
-	Type			= Drainable,
-	UseWhileEquipped	= FALSE,
-	UseDelta		= 0.25,
-        DisplayName         	= Shaving Cream,
-        icon 			= HCShavingcream,
-	DisplayCategory          =   Useless,
-    }
-
-item HCNailpolishremover
-    {
-        Weight    		= 0.2,
-	Type			= Drainable,
-	UseWhileEquipped	= FALSE,
-	UseDelta		= 0.25,
-        DisplayName         	= Nail Polish Remover,
-        icon 			= HCNailpolishremover,
-	DisplayCategory          =   Useless,
-    }
-
 item HCSponge
     {
         Weight    		= 0.1,
@@ -465,56 +218,6 @@ item HCSponge
 	DisplayCategory          =   CraftChem,
     }
 
-item HCStylingfoam
-    {
-        Weight    		= 0.2,
-	Type			= Drainable,
-	UseWhileEquipped	= FALSE,
-	UseDelta		= 0.25,
-        DisplayName         	= Styling Foam,
-        icon 			= HCStylingfoam,
-	DisplayCategory          =   Useless,
-    }
-
-/*item HCPlunger
-    {
-        Weight    		= 0.1,
-        Type    		= Normal,
-        icon 			= HCPlunger,
-	DisplayCategory          =   Useless,
-    }*/
-
-item HCToiletbrush
-    {
-        Weight    		= 0.1,
-        Type    		= Normal,
-        DisplayName         	= Toilet Brush,
-        icon 			= HCToiletbrush,
-	DisplayCategory          =   Useless,
-    }
-
-item HCDraincleaner
-    {
-        Weight    		= 0.2,
-	Type			= Drainable,
-	UseWhileEquipped	= FALSE,
-	UseDelta		= 0.25,
-        DisplayName         	= Drain Cleaner,
-        icon 			= HCDraincleaner,
-	DisplayCategory          =   Useless,
-    }
-
-item HCToiletcleaner
-    {
-        Weight    		= 0.2,
-	Type			= Drainable,
-	UseWhileEquipped	= FALSE,
-	UseDelta		= 0.25,
-        DisplayName         	= Toilet Cleaner,
-        icon 			= HCToiletcleaner,
-	DisplayCategory          =   Useless,
-    }
-
 item HCToiletpaperpack
     {
         Weight    		= 0.3,
@@ -522,42 +225,6 @@ item HCToiletpaperpack
         DisplayName         	= Toiletpaper Pack,
         icon 			= HCToiletpaperpack,
 	DisplayCategory          =   Medical,
-    }
-
-item HCToothcleaner
-    {
-        Weight    		= 0.1,
-        Type    		= Normal,
-        DisplayName         	= Tooth Cleaner,
-        icon 			= HCToothcleaner,
-	DisplayCategory          =   Useless,
-    }
-
-item HCDentures
-    {
-        Weight    		= 0.1,
-        Type    		= Normal,
-        DisplayName         	= Dentures,
-        icon 			= HCDentures,
-	DisplayCategory          =   Useless,
-    }
-
-item HCShavingbrush
-    {
-        Weight    		= 0.1,
-        Type    		= Normal,
-        DisplayName         	= Shaving Brush,
-        icon 			= HCShavingbrush,
-	DisplayCategory          =   Useless,
-    }
-
-item HCSanitizingjar
-    {
-        Weight    		= 0.1,
-        Type    		= Normal,
-        DisplayName         	= Sanitizing Jar,
-        icon 			= HCSanitizingjar,
-		DisplayCategory = Useless,
     }
 
 item HCRazorblade
@@ -576,24 +243,6 @@ item HCRazorbladebox
         DisplayName         	= Box of Razor Blade,
         icon 			= HCRazorbladebox,
 		DisplayCategory = Craft,
-    }
-
-item HCHandmirror
-    {
-        Weight    		= 0.3,
-        Type    		= Normal,
-        DisplayName         	= Hand Mirror,
-        icon 			= HCHandmirror,
-		DisplayCategory = Useless,
-    }
-
-item HCBathroomscale
-    {
-        Weight    		= 0.8,
-        Type    		= Normal,
-        DisplayName         	= Bathroom Scale,
-        icon 			= HCBathroomscale,
-		DisplayCategory = Useless,
     }
 
 item HCClothhamper
@@ -652,56 +301,6 @@ item HCStraightrazor
 
 /************************RECIPES************************/
 
-
-recipe Pack Diapers
-    {
-    HCDiaper=20,
-    Result:HCDiaperpack,
-    Time:15,
-    }
-
-recipe Unpack Diapers
-    {
-    HCDiaperpack,
-    Result:HCDiaper=20,
-    Time:15,
-    }
-
-recipe Box Menstrual Pads
-    {
-    HCMenstrualpad=20,
-    Result:HCMenstrualpadbox,
-    Time:15,
-    }
-
-recipe Unbox Menstrual Pads
-    {
-    HCMenstrualpadbox,
-    Result:HCMenstrualpad=20,
-    Time:15,
-    }
-
-recipe Box Tampons
-    {
-    HCTampon=20,
-    Result:HCTamponbox,
-    Time:15,
-    }
-
-recipe Unbox Tampons
-    {
-    HCTamponbox,
-    Result:HCTampon=20,
-    Time:15,
-    }
-
-recipe Unbox Tissues
-    {
-    HCTissuebox,
-    Result:Tissue=100,
-    Time:15,
-    }
-
 recipe Open Toiletpaper Pack
     {
     HCToiletpaperpack,
@@ -745,67 +344,6 @@ recipe Unbox Box of Red Hair Color
 		Time:15,
     }
 	
-
-recipe Disinfect Diaper
-    {
-        destroy HCDiaper,
-        WhiskeyFull;10,
-        Result:HCDiaperAlcohol,
-        Time:40.0,
-        Category:Health,
-    	OnGiveXP:HCDoctor_OnGiveXP,
-    }
-
-recipe Disinfect Diaper
-    {
-        destroy HCDiaper,
-        Disinfectant;3,
-        Result:HCDiaperAlcohol,
-        Time:40.0,
-        Category:Health,
-    	OnGiveXP:HCDoctor_OnGiveXP,
-    }
-
-recipe Clean Diaper
-    {
-        HCDiaperDirty,
-        Water,
-        Result:HCDiaper,
-        Time:40.0,
-        Category:Health,
-    	OnGiveXP:HCDoctor_OnGiveXP,
-    }
-
-recipe Disinfect Menstrual Pad
-    {
-        destroy HCMenstrualpad,
-        WhiskeyFull;10,
-        Result:HCMenstrualpadAlcohol,
-        Time:40.0,
-        Category:Health,
-    	OnGiveXP:HCDoctor_OnGiveXP,
-    }
-
-recipe Disinfect Menstrual Pad
-    {
-        destroy HCMenstrualpad,
-        Disinfectant;3,
-        Result:HCMenstrualpadAlcohol,
-        Time:40.0,
-        Category:Health,
-    	OnGiveXP:HCDoctor_OnGiveXP,
-    }
-
-recipe Clean Menstrual Pad
-    {
-        HCMenstrualpadDirty,
-        Water,
-        Result:HCMenstrualpad,
-        Time:40.0,
-        Category:Health,
-    	OnGiveXP:HCDoctor_OnGiveXP,
-    }
-
 recipe Box Razor Blades
     {
     HCRazorblade=20,

@@ -76,7 +76,7 @@ item HCJunkyardlargefull
 		DisplayCategory          =   CraftRec,
     }
 
-item HCJunkyardlargefull2
+item HCJunkyardlargefull
     {
   WeightReduction  = 0,
   Weight           = 10000,
@@ -218,16 +218,6 @@ item HCJunkdryer
 
 	}
 
-
-item HCJunkbicycle
-	{
-	Weight				=	3,
-	Type				=	Normal,
-	DisplayName			=	Broken Bicycle,
-	Icon				=	HCJunkbicycle,
-		DisplayCategory          =   CraftRec,
-
-	}
 
 item HCDynamo
 	{
@@ -410,7 +400,7 @@ recipe Search Junk
 
 recipe Scrap car parts
  {
-  keep HCJunkyardmediumfull/HCJunkyardlargefull2,
+  keep HCJunkyardmediumfull/HCJunkyardlargefull,
   keep [Recipe.GetItemTypes.LeatherGloves], 
   keep Sledgehammer2/Sledgehammer,
   FrontCarDoor1/FrontCarDoor2/FrontCarDoor3/RearCarDoor1/RearCarDoor2/RearCarDoor3/RearCarDoorDouble1/EngineDoor1/EngineDoor2/EngineDoor3/TrunkDoor1/TrunkDoor2/TrunkDoor3/OldCarMuffler1/NormalCarMuffler1/ModernCarMuffler1/OldCarMuffler2/NormalCarMuffler2/ModernCarMuffler2/OldCarMuffler3/NormalCarMuffler3/ModernCarMuffler3/SmallGasTank1/SmallGasTank2/SmallGasTank3/NormalGasTank1/NormalGasTank2/NormalGasTank3/BigGasTank1/BigGasTank2/BigGasTank3/ModernBrake1/ModernBrake2/ModernBrake3/OldBrake1/NormalBrake2/NormalBrake3/NormalBrake1/NormalBrake2/NormalBrake3/NormalSuspension1/NormalSuspension2/NormalSuspension3/ModernSuspension1/ModernSuspension2/ModernSuspension3,
@@ -460,22 +450,9 @@ recipe Fill Large Junkyard
     	OnGiveXP:Recipe.OnGiveXP.None,
     }
 
-
-recipe Anchor Large Junkyard
-    {
-  HCJunkyardlargefull,
-  CanBeDoneFromFloor:true,
-  Result:HCJunkyardlargefull2,
-  Time:100,
-  Category:Anchor,
-    }
-
-
-
-
 recipe Search Junk
     {
-       	keep HCJunkyardlargefull2,
+       	keep HCJunkyardlargefull,
        	HCTrashsmall,
 	keep [Recipe.GetItemTypes.LeatherGloves], 
        	Result:Garbagebag,
@@ -488,7 +465,7 @@ recipe Search Junk
 
 recipe Search Junk
     {
-       	keep HCJunkyardlargefull2,
+       	keep HCJunkyardlargefull,
        	HCTrashmedium,
 	keep [Recipe.GetItemTypes.LeatherGloves], 
        	Result:HCCardboardbox,
@@ -501,7 +478,7 @@ recipe Search Junk
 
 recipe Search Junk
     {
-       	keep HCJunkyardlargefull2,
+       	keep HCJunkyardlargefull,
 	HCTrashlarge,
 	keep [Recipe.GetItemTypes.LeatherGloves], 
        	Result:HCCardboardbox,
@@ -514,7 +491,7 @@ recipe Search Junk
 
 recipe Search Junk with Giant Magnet
     {
-        keep HCJunkyardlargefull2,
+        keep HCJunkyardlargefull,
 	HCTrashlarge,
        	HCBatteryhuge,
        	Result:HCCardboardbox,
@@ -525,19 +502,6 @@ recipe Search Junk with Giant Magnet
        	OnCreate:hcjunksearchmagnet,
     	OnGiveXP:Recipe.OnGiveXP.None,
     }
-
-recipe Make Sled
-	{
-        Screws=2,
-	HCSteelpipe=2,
-        SheetMetal,
-        Rope,
-        keep Screwdriver,              
-	Result:HCSled,              
-	Time:500.0,
-	Category:Engineer,
-    	OnGiveXP:HCWelding_OnGiveXP,
-	}
 
 recipe Insert Battery
     {

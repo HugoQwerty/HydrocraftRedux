@@ -12,121 +12,14 @@ module Hydrocraft
 	{
 		Weight		=	0.5,
 		Type		=	Literature,
-		UnhappyChange	=	-40,
+		UnhappyChange	=	-10,
 		DisplayName	=	Book,
-		StressChange	=	-40,
+		StressChange	=	-10,
 		Icon		=	Book,
-		BoredomChange	=	-50,
+		BoredomChange	=	-15,
 		DisplayCategory	=   LitE,
 		StaticModel = Book,
 		WorldStaticModel = BookClosedGround,
-	}
-
-	item HCBookcover
-    	{
-        	Weight    	= 	0.01,
-        	Type    	= 	Normal,
-        	DisplayName     = 	Book Cover,
-        	icon 		= 	HCBookcover,
-		DisplayCategory	=   Useless,
-		StaticModel	 = HCBookcover,
-		WorldStaticModel = HCBookcover,
-    	}
-
-	item HCBookmark
-    	{
-        	Weight    	= 	0.01,
-        	Type    	= 	Normal,
-        	DisplayName     = 	Bookmark,
-        	icon 		= 	HCBookmark,
-		DisplayCategory	=   Useless,
-		StaticModel	 = HCBookmarked,
-		WorldStaticModel = HCBookmarked,
-    	}
-
-	item HCPassport
-    	{
-        	Weight		=	1,
-        	Type		=	Literature,
-        	DisplayName	=	Passport,
-        	Icon		=	HCPassport,
-        	CanBeWrite  	=   	true,
-        	PageToWrite 	=   	10,
-			DisplayCategory	=   LitW,
-			StaticModel	 = Book,
-			WorldStaticModel = HCBookPassport,
-    	}
-
-	item HCBookphone
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		DisplayName	=	Phonebook,
-		Icon		=	HCBookphone,
-		BoredomChange	=	50,
-        	ReplaceOnUse    =   	HCBookphone,
-		DisplayCategory	=   LitE,
-		StaticModel = HCBookphoneOpen,
-		WorldStaticModel = HCBookphoneGround,
-	}
-
-	item HCBookalgebra
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Algebra Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookalgebra,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookalgebra,
-		DisplayCategory	=   LitE,
-		StaticModel = HCBookalgebraOpen,
-		WorldStaticModel = HCBookalgebraGround,
-	}
-
-	item HCBookastronomy
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		DisplayName	=	Astronomy Textbook,
-		Icon		=	HCBookastronomy,
-		TeachedRecipes  =   	Assemble Telescope;Disassemble Telescope;Gaze Through Telescope;Build Star Chart Board;View Star Chart Board,
-        	ReplaceOnUse    =   	HCBookastronomy,
-		DisplayCategory	=   LitR,
-		StaticModel = HCBookastronomyOpen,
-		WorldStaticModel = HCBookastronomyGround,
-	}
-
-	item HCBookalmanac
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Farmer's Almanac,
-		StressChange	=	-4,
-		Icon		=	HCBookalmanac,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookalmanac,
-		DisplayCategory	=   LitE,
-		StaticModel = HCBookalmanacOpen,
-		WorldStaticModel = HCBookalmanacGround,
-
-	}
-
-	item HCBookamericanhistory
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	American History Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookamericanhistory,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookamericanhistory,
-		DisplayCategory	=   LitE,
-		StaticModel = HCBookamericanhistoryOpen,
-		WorldStaticModel = HCBookamericanhistoryGround,
 	}
 
 	item HCBookanimalhusbandry
@@ -140,49 +33,6 @@ module Hydrocraft
 		DisplayCategory	=   LitR,
 		StaticModel = HCBookanimalhusbandryOpen,
 		WorldStaticModel = HCBookanimalhusbandryGround,
-	}
-
-	item HCBookbedtime
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-14,
-		DisplayName	=	Bedtime Stories,
-		StressChange	=	-14,
-		Icon		=	HCBookbedtime,
-		BoredomChange	=	-15,
-        	ReplaceOnUse    =   	HCBookbedtime,
-		DisplayCategory	=   LitE,
-		StaticModel = HCBookbedtimeOpen,
-		WorldStaticModel = HCBookbedtimeGround,
-	}
-
-	item HCBookcalculus
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Calculus Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookcalculus,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookcalculus,
-		DisplayCategory	=   LitE,
-		StaticModel = HCBookcalculusOpen,
-		WorldStaticModel = HCBookcalculusGround,
-	}
-
-	item HCBookceltic
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		DisplayName	=	Celtic Folklore,
-		Icon		=	HCBookceltic,
-		TeachedRecipes  =   	Make Rune Stone,
-        	ReplaceOnUse    =   	HCBookceltic,
-		DisplayCategory	=   LitR,
-		StaticModel = HCBookcelticOpen,
-		WorldStaticModel = HCBookcelticGround,
 	}
 
 	item HCBookchemistry
@@ -211,51 +61,6 @@ module Hydrocraft
 		WorldStaticModel = HCBookboneworkingGround,
 	}
 
-	item HCBookdictionary
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Dictionary,
-		StressChange	=	-4,
-		Icon		=	HCBookdictionary,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookdictionary,
-		DisplayCategory	=   LitE,
-		StaticModel = HCBookdictionaryOpen,
-		WorldStaticModel = HCBookdictionaryGround,
-	}
-
-	item HCBookencyclopedia
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Encyclopedia,
-		StressChange	=	-4,
-		Icon		=	HCBookencyclopedia,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookencyclopedia,
-		DisplayCategory	=   LitE,
-		StaticModel = HCBookencyclopediaOpen,
-		WorldStaticModel = HCBookencyclopediaGround,
-	}
-
-	item HCBookenglish
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	English Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookenglish,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookenglish,
-		DisplayCategory	=   LitE,
-		StaticModel = HCBookenglishOpen,
-		WorldStaticModel = HCBookenglishGround,
-	}
-
 	item HCBookentomology
 	{
 		Weight		=	0.5,
@@ -267,113 +72,6 @@ module Hydrocraft
 		DisplayCategory	=   LitR,
 		StaticModel = HCBookentomologyOpen,
 		WorldStaticModel = HCBookentomologyGround,
-	}
-
-
-	item HCBookfairytale
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-14,
-		DisplayName	=	Fairytale Book,
-		StressChange	=	-14,
-		Icon		=	HCBookfairytale,
-		BoredomChange	=	-15,
-        	ReplaceOnUse    =   	HCBookfairytale,
-		DisplayCategory	=   LitE,
-		StaticModel = HCBookfairytaleOpen,
-		WorldStaticModel = HCBookfairytaleGround,
-	}
-
-	item HCBookfrench
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	French Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookfrench,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookfrench,
-		DisplayCategory	=   LitE,
-		StaticModel = HCBookfrenchOpen,
-		WorldStaticModel = HCBookfrenchGround,
-	}
-
-	item HCBookgenealogy
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Genealogy of Kentucky,
-		StressChange	=	-4,
-		Icon		=	HCBookgenealogy,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookgenealogy,
-		DisplayCategory	=   LitE,
-		StaticModel = HCBookgenealogyOpen,
-		WorldStaticModel = HCBookgenealogyGround,
-	}
-
-	item HCBookgeometry
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Geometry Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookgeometry,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookgeometry,
-		DisplayCategory	=   LitE,
-		StaticModel = HCBookgeometryOpen,
-		WorldStaticModel = HCBookgeometryGround,
-	}
-
-	item HCBookgerman
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	German Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookgerman,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookgerman,
-		DisplayCategory	=   LitE,
-		StaticModel = HCBookgermanOpen,
-		WorldStaticModel = HCBookgermanGround,
-		
-	}
-
-	item HCBookitalian
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Italian Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookitalian,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookitalian,
-		DisplayCategory	=   LitE,
-		StaticModel = HCBookitalianOpen,
-		WorldStaticModel = HCBookitalianGround,
-	}
-
-	item HCBookmath
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Basic Mathematics Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookmath,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookmath,
-		DisplayCategory	=   LitE,
-		StaticModel = HCBookmathOpen,
-		WorldStaticModel = HCBookmathGround,
 	}
 
 	item HCBookmedical
@@ -402,80 +100,6 @@ module Hydrocraft
 		WorldStaticModel = HCBookmusicGround,
 	}
 
-	item HCBookpaleontology
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Paleontology Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookpaleontology,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookpaleontology,
-		DisplayCategory	=   LitE,
-		StaticModel = HCBookpaleontologyOpen,
-		WorldStaticModel = HCBookpaleontologyGround,
-	}
-
-	item HCBookpoetry
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Book of Poetry,
-		StressChange	=	-4,
-		Icon		=	HCBookpoetry,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookpoetry,
-		DisplayCategory	=   LitE,
-		StaticModel = HCBookpoetryOpen,
-		WorldStaticModel = HCBookpoetryGround,
-	}
-
-	item HCBookscrap
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Scrapbook,
-		StressChange	=	-4,
-		Icon		=	HCBookscrap,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookscrap,
-		DisplayCategory	=   LitE,
-		StaticModel = HCBookscrapOpen,
-		WorldStaticModel = HCBookscrapGround,
-	}
-
-	item HCBookspanish
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Spanish Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookspanish,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookspanish,
-		DisplayCategory	=   LitE,
-		StaticModel = HCBookspanishOpen,
-		WorldStaticModel = HCBookspanishGround,
-	}
-
-	item HCBookthesaurus
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Thesaurus,
-		StressChange	=	-4,
-		Icon		=	HCBookthesaurus,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookthesaurus,
-		DisplayCategory	=   LitE,
-		StaticModel = HCBookthesaurusOpen,
-		WorldStaticModel = HCBookthesaurusGround,
-	}
 
 	item HCBooktreeguide
 	{
@@ -490,19 +114,6 @@ module Hydrocraft
 		WorldStaticModel = HCBooktreeguideGround,
 	}
 
-	item HCBookstrigonometry
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Trigonometry Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBooktrigonometry,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookstrigonometry,
-		DisplayCategory	=   LitE,
-	}
-
 	item HCBookvet
 	{
 		Weight		=	0.5,
@@ -512,19 +123,6 @@ module Hydrocraft
 		TeachedRecipes  =   	Heal Dog,
         ReplaceOnUse    =   	HCBookvet,
 		DisplayCategory	=   LitR,
-	}
-
-	item HCBookworldhistory
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	World History Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookworldhistory,
-		BoredomChange	=	-5,
-        ReplaceOnUse    =   	HCBookworldhistory,
-		DisplayCategory	=   LitE,
 	}
 
 	item HCBookanatomy
@@ -538,30 +136,6 @@ module Hydrocraft
 		DisplayCategory	=   LitR,
 	}
 
-	item HCBookarthistory
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		DisplayName	=	Art History Textbook,
-		Icon		=	HCBookarthistory,
-		TeachedRecipes  =   	Paint on Canvas;Dye Yarn,
-        	ReplaceOnUse    =   	HCBookarthistory,
-		DisplayCategory	=   LitR,
-	}
-
-	item HCBookbible
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Holy Bible,
-		StressChange	=	-4,
-		Icon		=	HCBookbible,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookbible,
-		DisplayCategory	=   LitE,
-	}
-
 	item HCBookbirdgude
 	{
 		Weight		=	0.5,
@@ -570,43 +144,6 @@ module Hydrocraft
 		Icon		=	HCBookbirdgude,
 		TeachedRecipes  =   	Carve Wooden Bird Call;Carve Wooden Duck Call;Remove Eggs from Nest,
         	ReplaceOnUse    =   	HCBookbirdgude,
-		DisplayCategory	=   LitR,
-	}
-
-	item HCBookbiology
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Biology Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookbiology,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookbiology,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookcommunications
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Communications Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookcommunications,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookcommunications,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookeconomics
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		DisplayName	=	Economics Textbook,
-		Icon		=	HCBookeconomics,
-		TeachedRecipes  =   	Make Coin Press;Press Coin,
-        	ReplaceOnUse    =   	HCBookeconomics,
 		DisplayCategory	=   LitR,
 	}
 
@@ -658,70 +195,6 @@ module Hydrocraft
 		DisplayCategory	=   LitR,
 	}
 
-/*TODO: move recipe somewhere else, then this book can be removed.*/
-	item HCBookjewelry
-	{
-		DisplayCategory	=   LitR,	
-		Type		=	Literature,
-		DisplayName	=	Jewelry Crafting Textbook,
-		Weight		=	0.5,
-		Icon		=	HCBookjewelry,
-		TeachedRecipes	=	Make Steel Ring,
-       	ReplaceOnUse    =   	HCBookjewelry,
-	}
-
-	item HCBookgreekmyths
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Greek Mythology,
-		StressChange	=	-4,
-		Icon		=	HCBookgreekmyths,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookgreekmyths,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookhealth
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Health Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookhealth,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookhealth,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBooklaw
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Law Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBooklaw,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBooklaw,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookliterature
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Literature Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookliterature,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookliterature,
-		DisplayCategory	=   LitE,
-	}
-
 	item HCBookmammalguide
 	{
 		Weight		=	0.5,
@@ -735,19 +208,6 @@ module Hydrocraft
 		WorldStaticModel = HCBookmammalguideGround,
 	}
 
-	item HCBooknorsemyths
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Norse Mythology,
-		StressChange	=	-4,
-		Icon		=	HCBooknorsemyths,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBooknorsemyths,
-		DisplayCategory	=   LitE,
-	}
-
 	item HCBookoceanography
 	{
 		Weight		=	0.5,
@@ -759,73 +219,6 @@ module Hydrocraft
 		DisplayCategory	=   LitR,
 	}
 
-	item HCBookphilosophy
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Philosophy Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookphilosophy,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookphilosophy,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookphysics
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Physics Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookphysics,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookphysics,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookpoliticalscience
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Political Science Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookpoliticalscience,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookpoliticalscience,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookreptileguide
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Reptile Fieldguide,
-		StressChange	=	-4,
-		Icon		=	HCBookreptileguide,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookreptileguide,
-		DisplayCategory	=   LitE,
-		StaticModel = HCBookreptileguideOpen,
-		WorldStaticModel = HCBookreptileguideGround,
-	}
-
-	item HCBookrobotics
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Robotics Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookrobotics,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookrobotics,
-		DisplayCategory	=   LitE,
-	}
-
 	item HCBookscience
 	{
 		Weight		=	0.5,
@@ -835,45 +228,6 @@ module Hydrocraft
         	TeachedRecipes  = 	Make Laboratory;Research Professional Lab,
         	ReplaceOnUse    =   	HCBookscience,
 		DisplayCategory	=   LitR,
-	}
-
-	item HCBooksociology
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Sociology Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBooksociology,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBooksociology,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookworldatlas
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	World Atlas,
-		StressChange	=	-4,
-		Icon		=	HCBookworldatlas,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookworldatlas,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookamphibianguide
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Amphibian Fieldguide,
-		StressChange	=	-4,
-		Icon		=	HCBookamphibianguide,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookamphibianguide,
-		DisplayCategory	=   LitE,
 	}
 
     	item HCBookapiculture
@@ -931,19 +285,6 @@ module Hydrocraft
 		TeachedRecipes  =   	Recycle Small Battery Case;Recycle Battery Case;Recycle Medium Battery Case;Recycle Large Battery Case;Recycle Huge Battery Case;Recharge Small Battery;Recharge Battery;Recharge 9 Volt Battery;Recharge Medium Battery;Recharge Large Battery;Recharge Huge Battery;Make Small Battery Cases;Make Battery Cases;Make Medium Battery Cases;Make Large Battery Case;Make Huge Battery Case;Make Small Batterys;Make Batterys;Make Medium Battery;Make Large Battery;Make Huge Battery;Make Medium Batterys,
         ReplaceOnUse    =   	HCBookbattery,
 		DisplayCategory	=   LitR,
-	}
-
-	item HCBookanthropology
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Anthropology Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookanthropology,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookanthropology,
-		DisplayCategory	=   LitE,
 	}
 
 	item HCBookarchery
@@ -1407,17 +748,6 @@ module Hydrocraft
 		DisplayCategory	=   LitR,
 	}
 
-	item HCBookbicycle
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		DisplayName	=	Bicycle Repair Manual,
-		Icon		=	HCBookbicycle,
-		TeachedRecipes  =   	Repair Bicycle;Dismantle Bicycle;Attach Baskets to Bicycle;Remove Baskets to Bicycle,
-        	ReplaceOnUse    =   	HCBookbicycle,
-		DisplayCategory	=   LitR,
-	}
-
 	item HCBookanarchist
     	{
 		Weight		= 	0.5,
@@ -1470,229 +800,6 @@ module Hydrocraft
 		WorldStaticModel = HCBookanarchistGround,
     	}
 
-	item HCBookrussian
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Russian Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookrussian,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookrussian,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookkorean
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Korean Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookkorean,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookkorean,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookjapanese
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Japanese Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookjapanese,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookjapanese,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookchinese
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Chinese Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookchinese,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookchinese,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookportuguise
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Portuguese Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookportuguise,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookportuguise,
-		DisplayCategory	=   LitE,
-		StaticModel = HCBookportuguiseOpen,
-		WorldStaticModel = HCBookportuguiseGround,
-	}
-
-	item HCBookhindi
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Hindi Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookhindi,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookhindi,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookarabic
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Arabic Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookarabic,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookarabic,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookgreek
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Greek Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookgreek,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookgreek,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookfinnish
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Finnish Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookfinnish,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookfinnish,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookhebrew
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Hebrew Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookhebrew,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookhebrew,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookpolish
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Polish Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookpolish,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookpolish,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookzulu
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Zulu Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookzulu,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookzulu,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookegyptian
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Egyptian Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookegyptian,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookegyptian,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookczech
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Czech Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookczech,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookczech,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookdutch
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Dutch Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookdutch,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookdutch,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookkoran
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Koran,
-		StressChange	=	-4,
-		Icon		=	HCBookkoran,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookkoran,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBooktora
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Torah,
-		StressChange	=	-4,
-		Icon		=	HCBooktora,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBooktora,
-		DisplayCategory	=   LitE,
-	}
-
 	item HCBooklocksmithing
 	{
 		Weight		=	0.5,
@@ -1739,71 +846,6 @@ module Hydrocraft
 		DisplayCategory	=   LitR,
 	}
 
-	item HCBookastrology
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Astrology Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookastrology,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookastrology,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookcalligraphy
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Calligraphy Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookcalligraphy,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookcalligraphy,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookarcheology
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Archeology Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookarcheology,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookarcheology,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookradio
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Radio Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookradio,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookradio,
-		DisplayCategory	=   LitE,
-	}
-
-	item HCBookecology
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Ecology Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBookecology,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBookecology,
-		DisplayCategory	=   LitE,
-	}
-
 	item HCBookorganicchemistry
 	{
 		Weight		=	0.5,
@@ -1815,18 +857,6 @@ module Hydrocraft
 		DisplayCategory	=   LitR,
 	}
 
-	item HCBooksailing
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		UnhappyChange	=	-4,
-		DisplayName	=	Sailing Textbook,
-		StressChange	=	-4,
-		Icon		=	HCBooksailing,
-		BoredomChange	=	-5,
-        	ReplaceOnUse    =   	HCBooksailing,
-		DisplayCategory	=   LitE,
-	}
 
 	item HCBookexplosives
 	{
@@ -1863,17 +893,6 @@ module Hydrocraft
 		WorldStaticModel = HCBookdistilleryGround,
 	}
 
-	item HCBookphotography
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		DisplayName	=	Photography Textbook,
-		Icon		=	HCBookphotography,
-		TeachedRecipes  =   	Make Photography Workbench,
-        	ReplaceOnUse    =   	HCBookphotography,
-		DisplayCategory	=   LitR,
-	}
-
 	item HCBookmycology
 	{
 		Weight		=	0.5,
@@ -1882,27 +901,6 @@ module Hydrocraft
 		Icon		=	HCBookmycology,
 		TeachedRecipes  =   	Examine Biowaste;Cultivate Penicillium;Cultivate Aspergillus;Cultivate Yeast;Cultivate Slime Mold;Extract Yeast,
         	ReplaceOnUse    =   	HCBookmycology,
-		DisplayCategory	=   LitR,
-	}
-
-	item HCBooktaxidermy
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		DisplayName	=	Taxidermy Textbook,
-		Icon		=	HCBooktaxidermy,
-		TeachedRecipes  =   	Make Taxidermy Workbench;Create Glass Animal Eyes;Craft Small Animal Armature;Attach Straw to Small Animal Armature;Craft Medium Animal Armature;Attach Straw to Medium Animal Armature;Craft Taxidermy Mouse;Craft Taxidermy Rabbit,
-        	ReplaceOnUse    =   	HCBooktaxidermy,
-		DisplayCategory	=   LitR,
-	}
-
-	item HCBookcryptozoology
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		DisplayName	=	Cryptozoology Textbook,
-		Icon		=	HCBookcryptozoology,
-        	ReplaceOnUse    =   	HCBookcryptozoology,
 		DisplayCategory	=   LitR,
 	}
 
@@ -1917,37 +915,8 @@ module Hydrocraft
 		DisplayCategory	=   LitR,
 	}
 
-	item HCBooktoys
-	{
-		Weight		=	0.5,
-		Type		=	Literature,
-		DisplayName	=	Toy Making Textbook,
-		Icon		=	HCBooktoys,
-		TeachedRecipes  =  Build Toy Wagon;Carve Toy Horse;Make Straw Doll;Make Leather Ball;Create Glass Marbles,
-        	ReplaceOnUse    =   	HCBooktoys,
-		DisplayCategory	=   LitR,
-	}
-
-	item Nothing_Random_Book
-	{
-		Weight = 0,
-		Type = Normal,
-		DisplayName = Random Book,
-		Icon = Book,
-		StaticModel = Book,
-		WorldStaticModel = BookClosedGround,	
-	}	
 	
 /************************RECIPES************************/	
-
-recipe Remove Book Cover
-    {
-    Book/HCBook,
-    Result:Nothing_Random_Book,
-	RemoveResultItem:true,
-    Time:100,
-    OnCreate:HCRandombook,
-    }
 
 recipe Add Private Notes to Anarchist Cookbook
     {

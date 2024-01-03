@@ -1049,24 +1049,6 @@ recipe Attach Armor to Dog
     Category:Ranching,
     }
 
-recipe Remove Armor from Wardog
-    {
-	HCPitbullmalewar/HCPitbullmalewarSpiked,
-    Result:HCPitbullmaleinjured,
-    Time:50.0,
-    NeedToBeLearn:true,
-    Category:Ranching,
-    }
-
-recipe Remove Armor from Wardog
-    {
-	HCPitbullfemalewar,
-    Result:HCPitbullfemaleinjured,
-    Time:50.0,
-    NeedToBeLearn:true,
-    Category:Ranching,
-    }
-
 recipe Attach Armor to Dog
     {
 	HCDobermanmale,
@@ -1100,24 +1082,6 @@ recipe Attach Armor to Dog
     Category:Ranching,
     }
 
-recipe Remove Armor from Wardog
-    {
-	HCDobermanmalewar/HCDobermanmalewarSpiked,
-    Result:HCDobermanmaleinjured,
-    Time:50.0,
-    NeedToBeLearn:true,
-    Category:Ranching,
-    }
-
-recipe Remove Armor from Wardog
-    {
-	HCDobermanfemalewar,
-    Result:HCDobermanfemaleinjured,
-    Time:50.0,
-    NeedToBeLearn:true,
-    Category:Ranching,
-    }
-
 	recipe Attach Bags to Dog
     {
 		Bag_SurvivorBag=2,
@@ -1128,16 +1092,6 @@ recipe Remove Armor from Wardog
 		Time:50.0,
 		OnCreate:HCEmptyContainerOnRecipe,
 		Category:Ranching,
-    }
-
-	recipe Remove Bags from Dog
-    {
-		HCHuskymalepack,
-		
-		Result:HCHuskymale,		
-		Time:50.0,
-		Category:Ranching,
-		OnCreate:HCRemoveDogPack,
     }
 
 	recipe Attach Bags to Dog
@@ -1152,17 +1106,6 @@ recipe Remove Armor from Wardog
 		Category:Ranching,
     }
 
-	recipe Remove Bags from Dog
-    {
-		HCHuskyfemalepack,
-		
-		Result:HCHuskyfemale,		
-		Time:50.0,
-		Category:Ranching,
-		OnCreate:HCRemoveDogPack,
-    }
-
-
 	recipe Attach Bags to Dog
     {
 		Bag_SurvivorBag=2,
@@ -1173,16 +1116,6 @@ recipe Remove Armor from Wardog
     	Time:50.0,
 		OnCreate:HCEmptyContainerOnRecipe,
     	Category:Ranching,
-    }
-
-	recipe Remove Bags from Dog
-    {
-		HCBernesemalepack,
-		
-    	Result:HCBernesemale,
-    	Time:50.0,
-    	Category:Ranching,
-    	OnCreate:HCRemoveDogPack,
     }
 
 	recipe Attach Bags to Dog
@@ -1197,18 +1130,6 @@ recipe Remove Armor from Wardog
     	Category:Ranching,
     }
 
-	recipe Remove Bags from Dog
-    {
-		HCBernesefemalepack,
-		Result:HCBernesefemale,
-		
-		Time:50.0,
-		Category:Ranching,
-		OnCreate:HCRemoveDogPack,
-    }
-
-
-
 	recipe Attach Bags to Dog
     {
 		Bag_SurvivorBag=2,
@@ -1219,16 +1140,6 @@ recipe Remove Armor from Wardog
 		Time:50.0,
 		OnCreate:HCEmptyContainerOnRecipe,
     	Category:Ranching,
-    }
-
-	recipe Remove Bags from Dog
-    {
-		HCGreatdanemalepack,
-	
-    	Result:HCGreatdanemale,
-    	Time:50.0,
-    	Category:Ranching,
-    	OnCreate:HCRemoveDogPack,
     }
 
 	recipe Attach Bags to Dog
@@ -1243,17 +1154,6 @@ recipe Remove Armor from Wardog
     	Category:Ranching,
     }
 
-	recipe Remove Bags from Dog
-    {
-		HCGreatdanefemalepack,
-    	
-		Result:HCGreatdanefemale,
-    	Time:50.0,
-    	Category:Ranching,
-    	OnCreate:HCRemoveDogPack,
-    }
-
-
 
 	recipe Attach Bags to Dog
     {
@@ -1265,16 +1165,6 @@ recipe Remove Armor from Wardog
     	Time:50.0,
 		OnCreate:HCEmptyContainerOnRecipe,
     	Category:Ranching,
-    }
-
-	recipe Remove Bags from Dog
-    {
-		HCGermanshepherdmalepack,
-    	
-		Result:HCGermanshepherdmale,
-    	Time:50.0,
-    	Category:Ranching,
-    	OnCreate:HCRemoveDogPack,
     }
 
 	recipe Attach Bags to Dog
@@ -1289,18 +1179,6 @@ recipe Remove Armor from Wardog
     	Category:Ranching,
     }
 
-	recipe Remove Bags from Dog
-    {
-		HCGermanshepherdfemalepack,
-    	
-		Result:HCGermanshepherdfemale,
-    	Time:50.0,
-    	Category:Ranching,
-    	OnCreate:HCRemoveDogPack,
-    }
-
-
-
 	recipe Attach Bags to Dog
     {
 		Bag_SurvivorBag=2,
@@ -1311,16 +1189,6 @@ recipe Remove Armor from Wardog
     	Time:50.0,
 		OnCreate:HCEmptyContainerOnRecipe,
     	Category:Ranching,
-    }
-
-	recipe Remove Bags from Dog
-    {
-		HCLabradormalepack,
-    	
-		Result:HCLabradormale,
-    	Time:50.0,
-    	Category:Ranching,
-    	OnCreate:HCRemoveDogPack,
     }
 
 	recipe Attach Bags to Dog
@@ -1334,17 +1202,6 @@ recipe Remove Armor from Wardog
 		OnCreate:HCEmptyContainerOnRecipe,
     	Category:Ranching,
     }
-
-	recipe Remove Bags from Dog
-    {
-		HCLabradorfemalepack,
-    	
-		Result:HCLabradorfemale,
-    	Time:50.0,
-    	Category:Ranching,
-    	OnCreate:HCRemoveDogPack,
-    }
-
 
 recipe Heal Dog
     {

@@ -5,8 +5,6 @@ function HCFindSeeds(items, result, player)
 
 local skill = player:getPerkLevel(Perks.PlantScavenging);
 local luck = ZombRand(13) + skill;
-if  player:getTraits():contains('Lucky') then luck = luck + 5;
-end
 
 if luck >= 15 then -- find something
 
