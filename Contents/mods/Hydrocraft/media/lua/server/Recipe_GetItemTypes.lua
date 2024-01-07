@@ -68,3 +68,7 @@ end
 function Recipe.GetItemTypes.BucketConcrete(scriptItems)
 	scriptItems:addAll(getScriptManager():getItemsTag("BucketConcrete"))
 end
+
+function Recipe.GetItemTypes.FishHooks(scriptItems)
+	scriptItems:addAll(getScriptManager():getItemsTag("FishHook"))
+end
