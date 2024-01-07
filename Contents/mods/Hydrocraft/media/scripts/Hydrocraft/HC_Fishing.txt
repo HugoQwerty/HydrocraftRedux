@@ -92,76 +92,84 @@ item HCLuregarland
 
 item HCFishhookbone
     {
-        Type		=	Normal,
-        DisplayName	=	Bone Fishhook,
-        Icon		=	HCFishhookbone,
-        Weight		=	0.01,
-		DisplayCategory =   SurFish,
+        Type		= Normal,
+        DisplayName	= Bone Fishhook,
+        Icon		= HCFishhookbone,
+        Weight		= 0.01,
+	DisplayCategory = SurFish,
+	Tags		= FishHook,
     }
 
 item HCFishhookcopper
     {
-        Type		=	Normal,
-        DisplayName	=	Copper Fishhook,
-        Icon		=	HCFishhookcopper,
-        Weight		=	0.01,
-		DisplayCategory =   SurFish,
+        Type		= Normal,
+        DisplayName	= Copper Fishhook,
+        Icon		= HCFishhookcopper,
+        Weight		= 0.01,
+	DisplayCategory = SurFish,
+	Tags		= FishHook,
     }
 
 item HCFishhooktin
     {
-        Type		=	Normal,
-        DisplayName	=	Tin Fishhook,
-        Icon		=	HCFishhooktitanium,
-        Weight		=	0.01,
-		DisplayCategory =   SurFish,
+        Type		= Normal,
+        DisplayName	= Tin Fishhook,
+        Icon		= HCFishhooktitanium,
+        Weight		= 0.01,
+	DisplayCategory = SurFish,
+	Tags		= FishHook,
     }
 
 
 item HCFishhookbronze
     {
-        Type		=	Normal,
-        DisplayName	=	Bronze Fishhook,
-        Icon		=	HCFishhookbronze,
-        Weight		=	0.01,
-		DisplayCategory =   SurFish,
+        Type		= Normal,
+        DisplayName	= Bronze Fishhook,
+        Icon		= HCFishhookbronze,
+        Weight		= 0.01,
+	DisplayCategory = SurFish,
+	Tags		= FishHook,
     }
 
 
 item HCFishhookiron
     {
-        Type		=	Normal,
-        DisplayName	=	Iron Fishhook,
-        Icon		=	HCFishhookiron,
-        Weight		=	0.01,
-		DisplayCategory =   SurFish,
+        Type		= Normal,
+        DisplayName	= Iron Fishhook,
+        Icon		= HCFishhookiron,
+        Weight		= 0.01,
+	DisplayCategory = SurFish,
+	Tags		= FishHook,
     }
 
 item HCFishhooksteel
     {
-        Type		=	Normal,
-        DisplayName	=	Steel Fishhook,
-        Icon		=	HCFishhooksteel,
-        Weight		=	0.01,
-		DisplayCategory =   SurFish,
+        Type		= Normal,
+        DisplayName	= Steel Fishhook,
+        Icon		= HCFishhooksteel,
+        Weight		= 0.01,
+	DisplayCategory = SurFish,
+	Tags		= FishHook,
     }
 
 item HCFishhookaluminum
     {
-        Type		=	Normal,
-        DisplayName	=	Aluminum Fishhook,
-        Icon		=	HCFishhookaluminium,
-        Weight		=	0.01,
-		DisplayCategory =   SurFish,
+        Type		= Normal,
+        DisplayName	= Aluminum Fishhook,
+        Icon		= HCFishhookaluminium,
+        Weight		= 0.01,
+	DisplayCategory = SurFish,
+	Tags		= FishHook,
     }
 
 item HCFishhooktitanium
     {
-        Type		=	Normal,
-        DisplayName	=	Titanium Fishhook,
-        Icon		=	HCFishhooktitanium,
-        Weight		=	0.01,
-		DisplayCategory =   SurFish,
+        Type		= Normal,
+        DisplayName	= Titanium Fishhook,
+        Icon		= HCFishhooktitanium,
+        Weight		= 0.01,
+	DisplayCategory = SurFish,
+	Tags		= FishHook,
     }
 
 item HCEggbass
