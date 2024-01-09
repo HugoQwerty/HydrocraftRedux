@@ -105,16 +105,6 @@ item HCRingmold
 		DisplayCategory = CraftMet,
     }
 
-item HCFishhookmold
-    {
-        Weight    		= 0.5,
-	Type 			= Drainable,
-	UseDelta 		= 0.25,
-        DisplayName         	= Fishhook Mold,
-        icon 			= HCNailmold,
-		DisplayCategory = CraftMet,
-    }
-
 item HCNailmold
     {
         Weight    		= 0.5,
@@ -943,21 +933,6 @@ recipe Make Ring Mold
     OnTest:HCNearKiln,
     CanBeDoneFromFloor:true,
     Result:HCRingmold,
-    NeedToBeLearn:true,
-    Time:100,
-    Category:Pottery,
-    OnCreate:getBurned,
-    OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-recipe Make Fishhook Mold
-    {
-    HCGreyclay/HCRedclay,
-    Charcoal,
-    [Recipe.GetItemTypes.StartFire],
-    OnTest:HCNearKiln,
-    CanBeDoneFromFloor:true,
-    Result:HCFishhookmold,
     NeedToBeLearn:true,
     Time:100,
     Category:Pottery,
