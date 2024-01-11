@@ -85,4 +85,5 @@ IGUI_EN = {
 	IGUI_SearchMode_Categories_Dung = "Dung",
 	IGUI_SearchMode_Categories_Bark = "Bark",
 	-- <End> Added Categories
+	IGUI_perks_Hydrocraft_Smithing = "Smithing",
 }
