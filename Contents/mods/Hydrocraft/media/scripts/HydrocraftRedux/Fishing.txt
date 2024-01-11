@@ -1,0 +1,40 @@
+
+module HydrocraftRedux
+{
+
+  imports { Base }
+
+	item BoneFishHook
+	{
+		Type			= Normal,
+		DisplayName		= Bone Fishhook,
+		Icon			= HCFishhookbone,
+		Weight			= 0.01,
+		DisplayCategory	= SurFish,
+		Tags			= FishHook,
+	}
+
+	item WireFishHook
+	{
+		Type			= Normal,
+		DisplayName		= Wire Fishhook,
+		Icon			= HCFishhooksteel,
+		Weight			= 0.01,
+		DisplayCategory	= SurFish,
+		Tags			= FishHook,
+	}
+
+  /***** Recipes *****/
+
+	recipe Craft Wire Fish Hooks
+	{
+		Wire,
+		keep HCPliers,
+		Result:HydrocraftRedux.WireFishHook=4,
+		NeedToBeLearn:false,
+		Time:250.0,
+		Category:Survivalist,
+		OnGiveXP:Recipe.OnGiveXP.None,
+	}
+
+}
