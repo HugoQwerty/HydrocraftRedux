@@ -338,15 +338,6 @@ item HCBoneneedle
     } 
 
 
-item HCFishhookbone
-    {
-        Weight    		= 0.1,
-        Type    		= Normal,
-        DisplayName         	= Bone Fishhook,
-        icon 			= HCFishhookbone,
-		DisplayCategory          =   SurFish,
-    } 
-
  item HCGluejar
     	{
         Weight			=	0.2,
@@ -884,18 +875,16 @@ recipe Carve Knitting Needles
     OnGiveXP:Recipe.OnGiveXP.None,
     }  
 
-
-recipe Craft Bone Fishhook
-    {
-        HCBone/HCZombiebones,
-		    keep [Recipe.GetItemTypes.SharpKnife]/[Recipe.GetItemTypes.Scissors],
-		    Result:HCFishhookbone,
-		    Sound:PZ_Saw,
-    		NeedToBeLearn:true,
-		    Time:250.0,
-    		Category:Survivalist,
-   	 	  OnGiveXP:Recipe.OnGiveXP.None,
-	  }
+	recipe Craft Bone Fish Hook
+	{
+		HCBone/HCZombiebones,
+		keep [Recipe.GetItemTypes.SharpKnife],
+		Result:HydrocraftRedux.BoneFishHook,
+		NeedToBeLearn:false,
+		Time:250.0,
+		Category:Survivalist,
+		OnGiveXP:Recipe.OnGiveXP.None,
+	}
 
 recipe Roll Bone Dice
     {
