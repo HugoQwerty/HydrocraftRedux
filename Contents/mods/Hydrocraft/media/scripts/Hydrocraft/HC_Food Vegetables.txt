@@ -726,7 +726,9 @@ item HCTomatillo
 	DisplayCategory          =   FoodP,
     }
 
-<<<<<<< Updated upstream
+/*<<<<<<< Updated upstream*/
+/*The above chevrons weren't inside a comment, so i added comment tags - Hugo*/
+
 =======
     item HCJalapeno
 	{
