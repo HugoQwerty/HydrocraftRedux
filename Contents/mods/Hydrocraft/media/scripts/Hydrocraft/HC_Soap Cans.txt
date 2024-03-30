@@ -73,4 +73,4 @@ recipe Fill Empty Soap Can With Soap
     	Time:500,
     	Category:Chemistry,
     }
-
+}
