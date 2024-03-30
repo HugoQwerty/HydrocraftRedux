@@ -14,29 +14,6 @@ module Hydrocraft
 
     recipe Dismantle
     {
-       HCElectricguitar,
-       keep Screwdriver,
-
-       Result:ElectronicsScrap,
-       Time:30.0,
-       Category:Electrical,
-       OnGiveXP:DismantleElectronics_OnGiveXP,
-    }
-
-    recipe Dismantle
-    {
-       HCAmp,
-       keep Screwdriver,
-
-       Result:Amplifier,
-       Time:30.0,
-       Category:Electrical,
-       OnCreate:Dismantle_OnCreate,
-       OnGiveXP:DismantleElectronics_OnGiveXP,
-    }
-
-    recipe Dismantle
-    {
        HCDVDPlayer,
        keep Screwdriver,
 
