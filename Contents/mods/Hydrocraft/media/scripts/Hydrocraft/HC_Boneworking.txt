@@ -328,14 +328,16 @@ item HCDicebone
 		DisplayCategory          =   Toy,
     } 
 
-item HCBoneneedle
-    {
-        Weight    		= 0.1,
-        Type    		= Normal,
-        DisplayName         	= Bone Needle,
-        icon 			= HCBoneneedle,
-		DisplayCategory          =   CraftTailor,
-    } 
+	/*Tag added so this item now works with [Recipe.GetItemTypes.SewingNeedle] - Hugo*/
+	item HCBoneneedle
+	{
+		Weight		= 0.1,
+		Type		= Normal,
+		DisplayName	= Bone Needle,
+		icon		= HCBoneneedle,
+		DisplayCategory	= CraftTailor,
+		Tags		= SewingNeedle,
+	}
 
 
  item HCGluejar
