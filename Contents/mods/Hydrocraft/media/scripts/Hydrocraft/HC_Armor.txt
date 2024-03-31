@@ -560,16 +560,6 @@ item HCArmarmortire
 		DisplayCategory          =   ClothP,
     	}
 
-item HCArmarmorbubblewrap
-    	{
-        Weight    		= 0.2,
-        Type    		= Normal,
-        DisplayName         	= Bubble Wrap Arm Guards,
-        icon 			= HCArmarmorbubblewrap,
-	Tooltip 		= Tooltip_HCArmor,
-		DisplayCategory          =   ClothP,
-    	}
-
 /************************Torso Armor************************/
 
 item HCArmormilitaryjacket
@@ -867,15 +857,6 @@ item HCArmorphonebooks
 		DisplayCategory          =   ClothP,
     	}
 
-item HCArmorbubblewrap
-    	{
-        Weight    		= 0.4,
-        Type    		= Normal,
-        DisplayName         	= Bubble Wrap Armor,
-        icon 			= HCArmorbubblewrap,
-	Tooltip 		= Tooltip_HCArmor,
-		DisplayCategory          =   ClothP,
-    	}
 
 /************************Leg Armor************************/
 
@@ -1113,15 +1094,6 @@ item HCLegarmortire
 		DisplayCategory          =   ClothP,
     	}
 
-item HCLegarmorbubblewrap
-    	{
-        Weight    		= 0.2,
-        Type    		= Normal,
-        DisplayName         	= Bubble Wrap Leg Guards,
-        icon 			= HCLegarmorbubblewrap,
-	Tooltip 		= Tooltip_HCArmor,
-		DisplayCategory          =   ClothP,
-    	}
 
 /************************Boots************************/
 
@@ -1615,17 +1587,6 @@ recipe Make Arm Guards
     		OnGiveXP:Recipe.OnGiveXP.None,
 	}
 
-
-recipe Make Arm Guards
-	{
-	   	HCBubblewrap=2,
-		DuctTape=4,
-	   	Result:HCArmarmorbubblewrap,
-	   	Time:150.0,
-    		Category:Armor,
-    		OnGiveXP:Recipe.OnGiveXP.None,
-	}
-
 recipe Make Armor
 	{
         	HCRingsteel=16,
@@ -1855,16 +1816,6 @@ recipe Make Armor
     		OnGiveXP:Recipe.OnGiveXP.None,
 	}
 
-recipe Make Armor
-	{
-	   	HCBubblewrap=4,
-		DuctTape=10,
-	   	Result:HCArmorbubblewrap,
-	   	Time:150.0,
-    		Category:Armor,
-    		OnGiveXP:Recipe.OnGiveXP.None,
-	}
-
 recipe Make Leg Guards
 	{
         	HCRingsteel=16,
@@ -1949,15 +1900,6 @@ recipe Make Leg Guards
     		OnGiveXP:HCWelding_OnGiveXP,
 	}
 /*
-recipe Make Leg Guards
-	{
-	   	HCBubblewrap=2,
-		DuctTape=6,
-	   	Result:HCLegarmorbubblewrap,
-	   	Time:150.0,
-    		Category:Armor,
-    		OnGiveXP:Recipe.OnGiveXP.None,
-	}
 
 recipe Make Leg Guards
 	{
