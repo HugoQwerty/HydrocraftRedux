@@ -110,31 +110,6 @@ item HCAmmonalbomboff
 
 /************************WEAPONS************************/
 
-	item HCPineconebomb
-	{
-		OtherHandUse				=	TRUE,
-		MaxRange					=	8,
-		WeaponSprite 				=   Molotov,
-		Type						=	Weapon,
-		MinimumSwingTime			=	1.5,
-		SwingAnim					=	Throw,
-		UseSelf						=	TRUE,
-		DisplayName					=	Flaming Pinecone,
-		SwingTime					=	1.5,
-		SwingAmountBeforeImpact		=	0.1,
-		PhysicsObject				=	MolotovCocktail,
-		MinDamage					=	0,
-		Weight						=	0.1,
-		MaxDamage					=	0,
-		OtherHandRequire			=	Lighter,
-		MaxHitCount					=	0,
-        FirePower  					=   10,
-        FireRange  					=   4,
-		Icon						=	HCPineconebomb,
-		Tooltip 			= 	Tooltip_Trap,
-		DisplayCategory				=	WepBomb,
-	}
-
     item HCGrenade
 	{
 		MaxRange				=	10,
@@ -726,17 +701,6 @@ item HCAmmonalbomboff
 
 
 /************************RECIPES************************/	
-
-
-recipe Light Pinecone
-	{
-	HCFircone/Pinecone,
-    	Lighter,	
-	Result:HCPineconebomb,
-	Time:15,
-    	Category:Survivalist,
-    	OnGiveXP:Recipe.OnGiveXP.None,
-	}
 	
 recipe Make Thermite Bomb
     {
