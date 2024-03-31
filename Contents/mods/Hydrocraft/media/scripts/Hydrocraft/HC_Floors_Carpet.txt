@@ -1,0 +1,265 @@
+/*
+New recipes for crafting all 16 vanilla carpet tiles.
+HC doesn't have yarn colours for all of them, so some recipes use two colours.
+OnCreate:recipe_hcspindle3 is commented out as I don't think this is required
+-Hugo
+*/
+module Hydrocraft
+{
+
+	imports { Base }
+
+	recipe Make Blue Carpet
+	{
+		HCYarnblue=3,
+		HCWoolcloth,
+		keep [Recipe.GetItemTypes.SewingNeedle],
+		Thread=3,
+		keep HCLoomfloor,
+		Result:Moveables.floors_interior_carpet_01_0,
+		CanBeDoneFromFloor:true,
+		Time:100,
+		Category:Weaving,
+		/*OnCreate:recipe_hcspindle3,*/
+		OnGiveXP:Recipe.OnGiveXP.None,
+	}
+
+	recipe Make Purple Carpet
+	{
+		HCYarnpurple=3,
+		HCWoolcloth,
+		keep [Recipe.GetItemTypes.SewingNeedle],
+		Thread=3,
+		keep HCLoomfloor,
+		Result:Moveables.floors_interior_carpet_01_1,
+		CanBeDoneFromFloor:true,
+		Time:100,
+		Category:Weaving,
+		/*OnCreate:recipe_hcspindle3,*/
+		OnGiveXP:Recipe.OnGiveXP.None,
+	}
+
+	/*2 black, 1 plain - as there is no gray yarn*/
+	recipe Make Dark Gray Carpet
+	{
+		HCYarnblack=2,
+		HCYarn,
+		HCWoolcloth,
+		keep [Recipe.GetItemTypes.SewingNeedle],
+		Thread=3,
+		keep HCLoomfloor,
+		Result:Moveables.floors_interior_carpet_01_2,
+		CanBeDoneFromFloor:true,
+		Time:100,
+		Category:Weaving,
+		/*OnCreate:recipe_hcspindle3,*/
+		OnGiveXP:Recipe.OnGiveXP.None,
+	}
+
+	/*2 black, 1 red - as there is no brown yarn*/
+	recipe Make Brown Carpet
+	{
+		HCYarnblack=2,
+		HCYarnred,
+		HCWoolcloth,
+		keep [Recipe.GetItemTypes.SewingNeedle],
+		Thread=3,
+		keep HCLoomfloor,
+		Result:Moveables.floors_interior_carpet_01_3,
+		CanBeDoneFromFloor:true,
+		Time:100,
+		Category:Weaving,
+		/*OnCreate:recipe_hcspindle3,*/
+		OnGiveXP:Recipe.OnGiveXP.None,
+	}
+
+	recipe Make Dark Red Carpet
+	{
+		HCYarnred=3,
+		HCWoolcloth,
+		keep [Recipe.GetItemTypes.SewingNeedle],
+		Thread=3,
+		keep HCLoomfloor,
+		Result:Moveables.floors_interior_carpet_01_4,
+		CanBeDoneFromFloor:true,
+		Time:100,
+		Category:Weaving,
+		/*OnCreate:recipe_hcspindle3,*/
+		OnGiveXP:Recipe.OnGiveXP.None,
+	}
+
+	recipe Make Green Carpet
+	{
+		HCYarngreen=3,
+		HCWoolcloth,
+		keep [Recipe.GetItemTypes.SewingNeedle],
+		Thread=3,
+		keep HCLoomfloor,
+		Result:Moveables.floors_interior_carpet_01_5,
+		CanBeDoneFromFloor:true,
+		Time:100,
+		Category:Weaving,
+		/*OnCreate:recipe_hcspindle3,*/
+		OnGiveXP:Recipe.OnGiveXP.None,
+	}
+
+	/*no violet yarn, purple is the closest*/
+	recipe Make Violet Carpet
+	{
+		HCYarnpurple=3,
+		HCWoolcloth,
+		keep [Recipe.GetItemTypes.SewingNeedle],
+		Thread=3,
+		keep HCLoomfloor,
+		Result:Moveables.floors_interior_carpet_01_6,
+		CanBeDoneFromFloor:true,
+		Time:100,
+		Category:Weaving,
+		/*OnCreate:recipe_hcspindle3,*/
+		OnGiveXP:Recipe.OnGiveXP.None,
+	}
+
+	/*no gray yarn, so black + white is only real option*/
+	recipe Make Gray Curly Carpet
+	{
+		HCYarnblack=2,
+		HCYarn,
+		HCWoolcloth,
+		keep [Recipe.GetItemTypes.SewingNeedle],
+		Thread=3,
+		keep HCLoomfloor,
+		Result:Moveables.floors_interior_carpet_01_7,
+		CanBeDoneFromFloor:true,
+		Time:100,
+		Category:Weaving,
+		/*OnCreate:recipe_hcspindle3,*/
+		OnGiveXP:Recipe.OnGiveXP.None,
+	}
+
+	/*Brown, with lines (ridges?), no brown yarn*/
+	recipe Make Bordeaux Carpet
+	{
+		HCYarnblack=2,
+		HCYarnred,
+		HCWoolcloth,
+		keep [Recipe.GetItemTypes.SewingNeedle],
+		Thread=3,
+		keep HCLoomfloor,
+		Result:Moveables.floors_interior_carpet_01_8,
+		CanBeDoneFromFloor:true,
+		Time:100,
+		Category:Weaving,
+		/*OnCreate:recipe_hcspindle3,*/
+		OnGiveXP:Recipe.OnGiveXP.None,
+	}
+
+	recipe Make Red Carpet
+	{
+		HCYarnred=3,
+		HCWoolcloth,
+		keep [Recipe.GetItemTypes.SewingNeedle],
+		Thread=3,
+		keep HCLoomfloor,
+		Result:Moveables.floors_interior_carpet_01_9,
+		CanBeDoneFromFloor:true,
+		Time:100,
+		Category:Weaving,
+		/*OnCreate:recipe_hcspindle3,*/
+		OnGiveXP:Recipe.OnGiveXP.None,
+	}
+
+	recipe Make Yellow Carpet
+	{
+		HCYarnyellow=3,
+		HCWoolcloth,
+		keep [Recipe.GetItemTypes.SewingNeedle],
+		Thread=3,
+		keep HCLoomfloor,
+		Result:Moveables.floors_interior_carpet_01_10,
+		CanBeDoneFromFloor:true,
+		Time:100,
+		Category:Weaving,
+		/*OnCreate:recipe_hcspindle3,*/
+		OnGiveXP:Recipe.OnGiveXP.None,
+	}
+
+	recipe Make White Carpet
+	{
+		HCYarn=3,
+		HCWoolcloth,
+		keep [Recipe.GetItemTypes.SewingNeedle],
+		Thread=3,
+		keep HCLoomfloor,
+		Result:Moveables.floors_interior_carpet_01_11,
+		CanBeDoneFromFloor:true,
+		Time:100,
+		Category:Weaving,
+		/*OnCreate:recipe_hcspindle3,*/
+		OnGiveXP:Recipe.OnGiveXP.None,
+	}
+
+	/*no beige yarn, so 2 white + 1 yellow*/
+	recipe Make Beige Carpet
+	{
+		HCYarn=2,
+		HCYarnyellow,
+		HCWoolcloth,
+		keep [Recipe.GetItemTypes.SewingNeedle],
+		Thread=3,
+		keep HCLoomfloor,
+		Result:Moveables.floors_interior_carpet_01_12,
+		CanBeDoneFromFloor:true,
+		Time:100,
+		Category:Weaving,
+		/*OnCreate:recipe_hcspindle3,*/
+		OnGiveXP:Recipe.OnGiveXP.None,
+	}
+
+	recipe Make Black Carpet
+	{
+		HCYarnblack=3,
+		HCWoolcloth,
+		keep [Recipe.GetItemTypes.SewingNeedle],
+		Thread=3,
+		keep HCLoomfloor,
+		Result:Moveables.floors_interior_carpet_01_13,
+		CanBeDoneFromFloor:true,
+		Time:100,
+		Category:Weaving,
+		/*OnCreate:recipe_hcspindle3,*/
+		OnGiveXP:Recipe.OnGiveXP.None,
+	}
+
+	/*no gray yarn, so black + white*/
+	recipe Make Gray Carpet
+	{
+		HCYarnblack,
+		HCYarn=2,
+		HCWoolcloth,
+		keep [Recipe.GetItemTypes.SewingNeedle],
+		Thread=3,
+		keep HCLoomfloor,
+		Result:Moveables.floors_interior_carpet_01_14,
+		CanBeDoneFromFloor:true,
+		Time:100,
+		Category:Weaving,
+		/*OnCreate:recipe_hcspindle3,*/
+		OnGiveXP:Recipe.OnGiveXP.None,
+	}
+
+	recipe Make Light Green Carpet
+	{
+		HCYarngreen=3,
+		HCWoolcloth,
+		keep [Recipe.GetItemTypes.SewingNeedle],
+		Thread=3,
+		keep HCLoomfloor,
+		Result:Moveables.floors_interior_carpet_01_15,
+		CanBeDoneFromFloor:true,
+		Time:100,
+		Category:Weaving,
+		/*OnCreate:recipe_hcspindle3,*/
+		OnGiveXP:Recipe.OnGiveXP.None,
+	}
+
+}
