@@ -886,14 +886,15 @@ recipe Carve Knitting Needles
 		OnGiveXP:Recipe.OnGiveXP.None,
 	}
 
-recipe Roll Bone Dice
-    {
-	      HCDicebone,
-   	    Result:HCDicebone,
-    	  Time:15,
-       	OnCreate:rprolld6,
-	      Category:Leisure,
-    }
+	recipe Roll Dice
+	{
+		keep Dice/HCDicebone,
+		Result:Dice,
+		RemoveResultItem:true,
+		Time:15,
+		OnCreate:rprolld6,/*TODO: change from global function*/
+		Category:Leisure,
+	}
 
 recipe Make Bone Ash
     {
