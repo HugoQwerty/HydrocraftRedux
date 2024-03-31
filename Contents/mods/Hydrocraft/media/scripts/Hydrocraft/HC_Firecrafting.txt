@@ -8,6 +8,27 @@ module Hydrocraft
 
 /************************ITEMS************************/
 
+	item CharcoalCold
+	{
+		DisplayName = Charcoal (Cold),
+		Type = Food,
+		Weight = 100,
+		Icon = TZ_CharCoal,
+		WorldStaticModel = Charcoal_Ground,
+	}
+
+	item CharcoalBurning
+	{
+		DisplayName = Charcoal (Burning),
+		Type = Food,
+		DaysFresh = 1,
+		DaysTotallyRotten = 1,
+		Weight = 100,
+		Icon = TZ_CharCoal,
+		WorldStaticModel = Charcoal_Ground,
+		ReplaceOnRotten = CharcoalCold,
+	}
+
 item HCTorch
 	{
 	        Weight		       =	1,
@@ -261,230 +282,20 @@ recipe Light Oil Lamp
     Category:Firecraft,
   	}
 
-recipe Make Charcoal
-    {
-    	Log,
-    	[Recipe.GetItemTypes.StartFire],
-    	OnTest:HCNearKiln,
-    	CanBeDoneFromFloor:true,
-    	Result:Charcoal,
-    	Time:100,
-    	Category:Firecraft,
-    	OnCreate:getBurned,
-       	OnGiveXP:HCCooking_OnGiveXP,
-    }
-
-recipe Make Charcoal
-    {
-    	Plank=3,
-    	[Recipe.GetItemTypes.StartFire],
-    	OnTest:HCNearKiln,
-    	CanBeDoneFromFloor:true,
-    	Result:Charcoal,
-    	Time:100,
-    	Category:Firecraft,
-    	OnCreate:getBurned,
-       	OnGiveXP:HCCooking_OnGiveXP,
-    }
-
-recipe Make Charcoal
-    {
-    	PercedWood=3,
-    	[Recipe.GetItemTypes.StartFire],
-    	OnTest:HCNearKiln,
-    	CanBeDoneFromFloor:true,
-    	Result:Charcoal,
-    	Time:100,
-    	Category:Firecraft,
-   	OnCreate:getBurned,
-       	OnGiveXP:HCCooking_OnGiveXP,
-    }
-
-recipe Make Charcoal
-    {
-    	HCWoodblock=9,
-    	[Recipe.GetItemTypes.StartFire],
-    	OnTest:HCNearKiln,
-    	CanBeDoneFromFloor:true,
-    	Result:Charcoal,
-    	Time:100,
-    	Category:Firecraft,
-    	OnCreate:getBurned,
-       	OnGiveXP:HCCooking_OnGiveXP,
-    }
-
-recipe Make Charcoal
-    {
-	UnusableWood=12,
-    	[Recipe.GetItemTypes.StartFire],
-    	OnTest:HCNearKiln,
-    	CanBeDoneFromFloor:true,
-    	Result:Charcoal,
-    	Time:100,
-    	Category:Firecraft,
-    	OnCreate:getBurned,
-       	OnGiveXP:HCCooking_OnGiveXP,
-    }
-recipe Make Charcoal
-    {
-    	WoodenStick=24,
-    	[Recipe.GetItemTypes.StartFire],
-    	OnTest:HCNearKiln,
-    	CanBeDoneFromFloor:true,
-    	Result:Charcoal,
-    	Time:100,
-    	Category:Firecraft,
-    	OnCreate:getBurned,
-       	OnGiveXP:HCCooking_OnGiveXP,
-    }
-
-recipe Make Charcoal
-    {
-    	TreeBranch=4,
-    	[Recipe.GetItemTypes.StartFire],
-    	OnTest:HCNearKiln,
-    	CanBeDoneFromFloor:true,
-    	Result:Charcoal,
-    	Time:100,
-    	Category:Firecraft,
-    	OnCreate:getBurned,
-       	OnGiveXP:HCCooking_OnGiveXP,
-    }
-
-
-recipe Make Charcoal
-    {
-    	Twigs=16,
-    	[Recipe.GetItemTypes.StartFire],
-    	OnTest:HCNearKiln,
-    	CanBeDoneFromFloor:true,
-    	Result:Charcoal,
-    	Time:100,
-    	Category:Firecraft,
-    	OnCreate:getBurned,
-       	OnGiveXP:HCCooking_OnGiveXP,
-    }
-
-recipe Make Charcoal
-    {
-    	HCTarsticks=4,
-    	[Recipe.GetItemTypes.StartFire],
-    	OnTest:HCNearKiln,
-    	CanBeDoneFromFloor:true,
-    	Result:Charcoal,
-    	Time:100,
-    	Category:Firecraft,
-    	OnCreate:getBurned,
-       	OnGiveXP:HCCooking_OnGiveXP,
-    }
-
-
-
-recipe Make Charcoal
-    {
-    	HCFirbough=4,
-    	[Recipe.GetItemTypes.StartFire],
-    	OnTest:HCNearKiln,
-    	CanBeDoneFromFloor:true,
-    	Result:Charcoal,
-    	Time:100,
-    	Category:Firecraft,
-    	OnCreate:getBurned,
-       	OnGiveXP:HCCooking_OnGiveXP,
-    }
-
-recipe Make Charcoal
-    {
-    	HCWillowbranch=4,
-    	[Recipe.GetItemTypes.StartFire],
-    	OnTest:HCNearKiln,
-    	CanBeDoneFromFloor:true,
-    	Result:Charcoal,
-    	Time:100,
-    	Category:Firecraft,
-    	OnCreate:getBurned,
-       	OnGiveXP:HCCooking_OnGiveXP,
-    }
-
-recipe Make Charcoal
-    {
-    	HCPinebough=4,
-    	[Recipe.GetItemTypes.StartFire],
-    	OnTest:HCNearKiln,
-    	CanBeDoneFromFloor:true,
-    	Result:Charcoal,
-    	Time:100,
-    	Category:Firecraft,
-    	OnCreate:getBurned,
-       	OnGiveXP:HCCooking_OnGiveXP,
-    }
-
-
-recipe Make Charcoal
-    {
-    	HCFircone=4,
-    	[Recipe.GetItemTypes.StartFire],
-    	OnTest:HCNearKiln,
-    	CanBeDoneFromFloor:true,
-    	Result:Charcoal,
-    	Time:100,
-    	Category:Firecraft,
-    	OnCreate:getBurned,
-       	OnGiveXP:HCCooking_OnGiveXP,
-    }
-
-recipe Make Charcoal
-    {
-    	HCBark=16,
-    	[Recipe.GetItemTypes.StartFire],
-    	OnTest:HCNearKiln,
-    	CanBeDoneFromFloor:true,
-    	Result:Charcoal,
-    	Time:100,
-    	Category:Firecraft,
-    	OnCreate:getBurned,
-       	OnGiveXP:HCCooking_OnGiveXP,
-    }
-
-recipe Make Charcoal
-    {
-    	HCBirchbark=16,
-    	[Recipe.GetItemTypes.StartFire],
-    	OnTest:HCNearKiln,
-    	CanBeDoneFromFloor:true,
-    	Result:Charcoal,
-    	Time:100,
-    	Category:Firecraft,
-    	OnCreate:getBurned,
-       	OnGiveXP:HCCooking_OnGiveXP,
-    }
-
-
-recipe Make Charcoal
-    {
-    	HCCoal,
-    	[Recipe.GetItemTypes.StartFire],
-    	OnTest:HCNearKiln,
-    	CanBeDoneFromFloor:true,
-    	Result:Charcoal,
-    	Time:100,
-    	Category:Firecraft,
-    	OnCreate:getBurned,
-       	OnGiveXP:HCCooking_OnGiveXP,
-    }
-
-recipe Make Charcoal
-    {
-    	CorpseMale/CorpseFemale,
-    	[Recipe.GetItemTypes.StartFire],
-    	OnTest:HCNearKiln,
-    	CanBeDoneFromFloor:true,
-    	Result:Charcoal,
-    	Time:100,
-    	Category:Firecraft,
-    	OnCreate:getBurned,
-       	OnGiveXP:HCCooking_OnGiveXP,
-    }
+	recipe Make Charcoal
+	{
+		[Recipe.GetItemTypes.StartFire],
+		Base.Log = 5,
+		Result:Charcoal=2,
+		RemoveResultItem:true,
+		CanBeDoneFromFloor:true,
+		Time:10.0,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		NearItem:Kiln,
+		OnCanPerform:Hydrocraft.OnCanPerform.NearEmptyKiln,
+		OnCreate:Hydrocraft.OnCreate.LightCharcoal,
+		Category:Firecraft,
+	}
 
 
 recipe Make Momigalite
