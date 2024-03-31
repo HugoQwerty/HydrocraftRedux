@@ -72,3 +72,8 @@ end
 function Recipe.GetItemTypes.FishHooks(scriptItems)
 	scriptItems:addAll(getScriptManager():getItemsTag("FishHook"))
 end
+
+--any item that can be used to 'Take Dirt' (shovels & trowel in vanilla + modded items)
+function Recipe.GetItemTypes.TakeDirt(scriptItems)
+	scriptItems:addAll(getScriptManager():getItemsTag("TakeDirt"))
+end
