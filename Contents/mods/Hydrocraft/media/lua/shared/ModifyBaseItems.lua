@@ -383,7 +383,10 @@ if scriptItem then
 	scriptItem:DoParam("Tags = BucketConcrete")
 end
 
-
+scriptItem = ScriptManager.instance:getItem("Base.HandScythe")
+if scriptItem then
+	scriptItem:DoParam("Tags = HandScythe")
+end
 
 
 
