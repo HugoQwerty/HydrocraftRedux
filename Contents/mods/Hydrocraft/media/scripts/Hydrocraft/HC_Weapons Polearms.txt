@@ -707,6 +707,7 @@ module Hydrocraft
 		RequiresEquippedBothHands 			= 	true,
         AttachmentType              = BigBlade,
 		DisplayCategory		=	WepMelee,
+		Tags = TwhoHandScythe,
 	}
 
 	item HCScytheiron
@@ -748,6 +749,7 @@ module Hydrocraft
 		RequiresEquippedBothHands 			= 	true,
         AttachmentType              = BigBlade,
 		DisplayCategory		=	WepMelee,
+		Tags = TwhoHandScythe,
 	}
 
 	item HCScythebronze
@@ -789,6 +791,7 @@ module Hydrocraft
 		RequiresEquippedBothHands 			= 	true,
         AttachmentType              = BigBlade,
 		DisplayCategory		=	WepMelee,
+		Tags = TwhoHandScythe,
 	}
 
 	item HCScythecopper
@@ -830,6 +833,7 @@ module Hydrocraft
 		RequiresEquippedBothHands 			= 	true,
         AttachmentType              = BigBlade,
 		DisplayCategory		=	WepMelee,
+		Tags = TwhoHandScythe,
 	}
 
 /************************RECIPES************************/	
